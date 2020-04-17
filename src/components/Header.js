@@ -1,4 +1,5 @@
 import React from 'react';
+import { auth0 } from '../auth';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -6,6 +7,12 @@ class Navbar extends React.Component {
     this.state = {
       showDropDown: false
     }
+  }
+
+  logoutHandler = () => {
+    auth0().logout({
+      returnTo: window.location.origin
+    });
   }
 
   showDropDownHandler = (event) => {
@@ -48,7 +55,7 @@ class Navbar extends React.Component {
                 Activity Log
               </a>
               <div className="dropdown-divider"></div> */}
-              <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+              <a onClick={this.logoutHandler} className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                 <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                 Logout
               </a>

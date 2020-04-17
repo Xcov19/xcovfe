@@ -1,10 +1,66 @@
 import React from 'react';
-import Dashboard from './Dashboard';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 
-function App() {
-  return (
-    <Dashboard />
-  );
+import Loading from './Loading';
+import Layout from './Layout';
+import Login from './Login';
+
+import { initAuth0, isAuthenticated } from '../auth';
+
+const PrivateRoute = ({ dispatch, component, ...rest }) => {
+  if (!isAuthenticated()) {
+    return (<Redirect to="/login" />)
+  } else {
+    return (
+      <Route {...rest} render={props => (React.createElement(component, props))} />
+    );
+  }
+};
+
+class App extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    }
+  }
+
+  componentDidMount() {
+    this.auth0Handler();
+  }
+
+  auth0Handler = async () => {
+    await initAuth0();
+    this.setState({
+      loading: false
+    })
+  }
+
+  render() {
+
+    const { loading } = this.state;
+
+    if (loading) {
+      return (
+        <Loading />
+      )
+    }
+
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact render={() => <Redirect to="/app/dashboard" />} />
+          <PrivateRoute path="/app" component={Layout} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
