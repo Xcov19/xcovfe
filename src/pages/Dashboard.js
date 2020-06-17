@@ -3,7 +3,9 @@ import DataTable from 'react-data-table-component';
 
 import data from '../data';
 
-function Dashboard() {
+function Dashboard(props) {
+
+  console.log(props)
 
   const [selectableRows, setSelectableRows] = React.useState(false);
   const [noSelectAll, setNoSelectAll] = React.useState(false);
