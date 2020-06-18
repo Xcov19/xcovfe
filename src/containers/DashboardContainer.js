@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import Dashboard from '../pages/Dashboard';
 
-const mapStateToProps = (state) => {
-  return {};
-};
+const mapStateToProps = (state) => ({
+  projects: state.projects,
+});
 
 const mapDispatchToProps = (dispatch) => {
   return {
