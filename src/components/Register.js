@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { setIsAuthenticated, isAuthenticated } from '../auth';
+import { Field, FileField, FormRow } from "./form";
 import ReactCodeInput from 'react-code-input';
 import {
   Button,
-  FormGroup,
-  FormControl,
-  FormLabel,
   Row,
   Col,
   Form,
@@ -55,42 +53,6 @@ const styles = {
     backgroundColor: '#DDDDDD',
   },
 };
-
-const FormRow = ({ children }) =>
-    <Row className="mb-2">
-      { children }
-    </Row>;
-
-const FileField = ({ label }) => {
-  const [fileName, setFileName] = React.useState(null);
-  const handleFileEvent = function(event) {
-    try {
-      const filePathName = event.target.value;
-      const paths = filePathName.split('\\');
-      setFileName(paths[paths.length - 1]);
-    } catch (e) {
-      setFileName("Uploaded!")
-    }
-  };
-  return (
-    <Col sm={6} xs={12}>
-      <FormGroup controlId={label} bsSize="large">
-        <FormLabel>{label}</FormLabel>
-        <Form.File custom label={fileName || ' '} onChange={handleFileEvent}/>
-      </FormGroup>
-    </Col>
-    )};
-
-const Field = ({ label, type="text" }) =>
-    <Col sm={6} xs={12}>
-      <FormGroup controlId={label} bsSize="large">
-        <FormLabel>{label}</FormLabel>
-        <FormControl
-            autoFocus
-            type={type}
-        />
-      </FormGroup>
-    </Col>;
 
 const Register = props => {
   const [otp, setOtp] = React.useState('');
@@ -144,15 +106,15 @@ const Register = props => {
             </FormRow>
 
             <p>Send OTP to</p>
-            <Button bsSize="large" type="submit" className="px-4">Phone</Button>
+            <Button type="submit" className="px-4">Phone</Button>
             <span className="mx-4">or</span>
-            <Button bsSize="large" type="submit" className="px-4">Email</Button>
+            <Button type="submit" className="px-4">Email</Button>
 
             <p className="mt-4 pt-4">Enter OTP</p>
             <ReactCodeInput type='number' fields={4} inputStyle={styles.codeInput} onChange={setOtp}/>
             <p className="mt-4">Did not receive OTP? <a className="mx-2" href="#">RESEND</a></p>
 
-            <Button onClick={login} disabled={otp.length !== 4} bsSize="large" type="submit" className="px-4">Get Started</Button>
+            <Button onClick={login} disabled={otp.length !== 4} type="submit" className="px-4">Get Started</Button>
           </Form>
         </Col>
       </Row>
