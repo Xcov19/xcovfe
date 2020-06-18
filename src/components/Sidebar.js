@@ -1,5 +1,9 @@
 import React from 'react';
 
+import {
+  Link
+} from "react-router-dom";
+
 function Sidebar() {
   return (
     <React.Fragment>
@@ -14,13 +18,29 @@ function Sidebar() {
         <hr className="sidebar-divider my-0" />
 
         <li className="nav-item">
-          <a className="nav-link" href="index.html">
+          <Link to={`/app/dashboard`} className="nav-link">
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
+          </Link>
+        </li>
+
+        <hr className="sidebar-divider mb-0" />
+
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            <i className="fas fa-fw fa-chart-area"></i>
+            <span>Account Settings</span>
           </a>
         </li>
 
-        <hr className="sidebar-divider" />
+        <hr className="sidebar-divider mb-0" />
+
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            <i className="fas fa-fw fa-table"></i>
+            <span>Profile View</span>
+          </a>
+        </li>
 
         {/* <div className="sidebar-heading">
           Interface
