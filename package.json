@@ -2,6 +2,7 @@
   "name": "covid",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/xcovfe",
   "dependencies": {
     "@apollo/client": "^3.0.0-beta.43",
     "@apollo/react-hooks": "^3.1.5",
