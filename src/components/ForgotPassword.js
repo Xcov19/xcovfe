@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import { auth0, setUser, setIsAuthenticated, isAuthenticated } from '../auth';
 
-class Login extends React.Component {
+class ForgotPassword extends React.Component {
   constructor(props) {
     super(props);
     console.log(props)
@@ -14,24 +14,6 @@ class Login extends React.Component {
     if (isAuthenticated()) {
       this.props.history.push('/app/dashboard');
     }
-  }
-
-  loginHandler = async (event) => {
-    event.preventDefault();
-
-    // try {
-    //   await auth0().loginWithPopup({
-    //     redirect_uri: window.location.origin
-    //   });
-    // } catch (error) {
-    //   console.error(error);
-    // }
-
-    // const user = await auth0().getUser();
-    // setUser(user);
-    setIsAuthenticated(true);
-
-    this.props.history.push('/app/dashboard');
   }
 
   render() {
@@ -44,39 +26,30 @@ class Login extends React.Component {
 
             <div className="card o-hidden border-0 shadow-lg my-5">
               <div className="card-body p-0">
-
                 <div className="row">
                   <div className="col-lg-3"></div>
                   <div className="col-lg-6">
                     <div className="p-5">
                       <div className="text-center">
-                        <h1 className="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                        <h1 className="h4 text-gray-900 mb-2">Forgot Your Password?</h1>
+                        <p className="mb-4">We get it, stuff happens. Just enter your email address below and we'll send you a link to reset your password!</p>
                       </div>
                       <form className="user">
                         <div className="form-group">
                           <input type="email" className="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." />
                         </div>
-                        <div className="form-group">
-                          <input type="password" className="form-control form-control-user" id="exampleInputPassword" placeholder="Password" />
-                        </div>
-                        <div className="form-group">
-                          <div className="custom-control custom-checkbox small">
-                            <input type="checkbox" className="custom-control-input" id="customCheck" />
-                            <label className="custom-control-label" htmlFor="customCheck">Remember Me</label>
-                          </div>
-                        </div>
-                        <a href="#" onClick={this.loginHandler} className="btn btn-primary btn-user btn-block">
-                          Login
+                        <a href="login.html" className="btn btn-primary btn-user btn-block">
+                          Reset Password
                         </a>
                       </form>
                       <hr />
                       <div className="text-center">
-                        {/* <a className="small" href="forgot-password.html">Forgot Password?</a> */}
-                        <Link to={`/forgot-password`} className="small">Forgot Password?</Link>
-                      </div>
-                      <div className="text-center">
                         {/* <a className="small" href="register.html">Create an Account!</a> */}
                         <Link to={`/register`} className="small">Create an Account!</Link>
+                      </div>
+                      <div className="text-center">
+                        {/* <a className="small" href="login.html">Already have an account? Login!</a> */}
+                        <Link to={`/login`} className="small">Already have an account? Login!</Link>
                       </div>
                     </div>
                   </div>
@@ -93,4 +66,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default ForgotPassword;

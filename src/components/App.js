@@ -9,6 +9,8 @@ import {
 import Loading from './Loading';
 import Layout from './Layout';
 import Login from './Login';
+import Register from './Register';
+import ForgotPassword from './ForgotPassword';
 
 import { initAuth0, isAuthenticated } from '../auth';
 
@@ -57,6 +59,8 @@ class App extends React.PureComponent {
           <Route path="/" exact render={() => <Redirect to="/app/dashboard" />} />
           <PrivateRoute path="/app" component={Layout} />
           <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/forgot-password" component={ForgotPassword} />
         </Switch>
       </Router>
     );
