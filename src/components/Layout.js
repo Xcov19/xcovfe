@@ -40,7 +40,6 @@ class Layout extends React.Component {
                 </Switch>
               </div>
             </div>
-            <Footer />
           </div>
         </div>
 

@@ -45,12 +45,12 @@ export const Field = props =>
         </FormGroup>
     </Col>;
 
-export const Select = ({ label, options }) =>
+export const Select = props =>
     <Col sm={6} xs={12}>
         <Form.Group>
-            <Form.Label>{label}</Form.Label>
-            <Form.Control as="select" custom>
-                { options.map(option => <option key={option}>{ option }</option>) }
+            <Form.Label style={{ marginRight: "12px" }}>{ props.label }</Form.Label>
+            <Form.Control as="select" custom {...props}>
+                { props.options.map(option => <option key={option}>{ option }</option>) }
             </Form.Control>
         </Form.Group>
     </Col>;
