@@ -3,7 +3,7 @@ import { Button, Card, Col, Row } from "react-bootstrap";
 import { withRouter } from "react-router";
 
 import Ticket from './Tickets';
-
+const contentHeight = 'calc(100vh - 100px)';
 const styles = {
   toggleWrapper: {
     position: 'absolute',
@@ -19,7 +19,7 @@ const styles = {
     margin: 24,
   },
   contentWrapper: {
-    minHeight: '85vh',
+    minHeight: contentHeight,
     overflowY: 'hidden',
     overflowX: 'hidden',
   },
@@ -29,6 +29,7 @@ const styles = {
     bottom: 0,
     left: 0,
     right: 0,
+    overflowY: 'scroll',
     backgroundColor: 'white',
     zIndex: 10,
   },
