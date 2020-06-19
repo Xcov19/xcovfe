@@ -6,7 +6,7 @@ import {
 
 import Sidebar from './Sidebar';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 import Project from '../pages/Project';
 // import Tickets from '../pages/Tickets';
@@ -14,9 +14,9 @@ import CreateProjectContainer from "../containers/CreateProjectContainer";
 import DashboardContainer from "../containers/DashboardContainer";
 
 class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
 
