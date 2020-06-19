@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { withRouter } from "react-router";
-
-import Ticket from './Tickets';
+import Ticket from '../components/Tickets';
+import SuspectedCaseForm from "../components/SuspectedCaseForm";
+import TicketFormModal from "../components/TicketFormModal";
+import SuspectedCaseFormContainer
+  from "../containers/SuspectedCaseFormContainer";
+import TicketsContainer from "../containers/TicketsContainer";
 const contentHeight = 'calc(100vh - 100px)';
 const styles = {
   toggleWrapper: {
@@ -101,10 +105,7 @@ const CasesOverview = () => {
         className="transition"
       >
         <Button onClick={() => setExpanded(false)}>Close cases</Button>
-
-        <Ticket
-          title="Pandemic - CovidX"
-        />
+        <TicketsContainer title="Pandemic - CovidX"/>
       </div>
     </div>
   )
@@ -140,6 +141,10 @@ const Project = ({ history }) => {
           <span>Project</span>
         </h3>
       </span>
+
+      {/*<TicketFormModal>*/}
+      {/*  <SuspectedCaseFormContainer ticketId={1} />*/}
+      {/*</TicketFormModal>*/}
 
       <Row>
         <ProjectCard />
