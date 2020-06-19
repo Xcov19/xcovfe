@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { withRouter } from "react-router";
 
+import Ticket from './Tickets';
+
 const styles = {
   toggleWrapper: {
     position: 'absolute',
@@ -76,15 +78,16 @@ const Notifications = () => {
 
       <div className={`transition ${expanded ? 'expanded-sidebar' : 'collapsed-sidebar'}`}>
         <div style={styles.notificationsWrapper}>
-          <Notification/>
-          <Notification/>
-          <Notification/>
-          <Notification/>
-          <Notification/>
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
+          <Notification />
         </div>
       </div>
     </React.Fragment>
-  )};
+  )
+};
 
 const CasesOverview = () => {
   const [expanded, setExpanded] = useState(false);
@@ -93,10 +96,14 @@ const CasesOverview = () => {
       <Button onClick={() => setExpanded(true)} className="mt-4">Show cases</Button>
 
       <div
-        style={ expanded ? styles.casesOverview : styles.hideCasesOverview }
+        style={expanded ? styles.casesOverview : styles.hideCasesOverview}
         className="transition"
       >
         <Button onClick={() => setExpanded(false)}>Close cases</Button>
+
+        <Ticket
+          title="Pandemic - CovidX"
+        />
       </div>
     </div>
   )
@@ -128,18 +135,18 @@ const Project = ({ history }) => {
     <Col>
       <span>
         <h3 className="mb-4 text-gray-800">
-          <a href="#"  style={styles.previous} onClick={goToPreviousPage}>{"<"}</a>
+          <a href="#" style={styles.previous} onClick={goToPreviousPage}>{"<"}</a>
           <span>Project</span>
         </h3>
       </span>
 
       <Row>
-        <ProjectCard/>
-        <ProjectCard/>
+        <ProjectCard />
+        <ProjectCard />
       </Row>
       <Row className="my-4">
-        <ProjectCard/>
-        <ProjectCard/>
+        <ProjectCard />
+        <ProjectCard />
       </Row>
 
       <CasesOverview />
