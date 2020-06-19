@@ -12,7 +12,7 @@ import Login from './Login';
 import Register from './Register';
 import ForgotPassword from './ForgotPassword';
 
-import { initAuth0, isAuthenticated } from '../auth';
+import { isAuthenticated } from '../auth';
 
 const PrivateRoute = ({ dispatch, component, ...rest }) => {
   if (!isAuthenticated()) {
@@ -37,7 +37,6 @@ class App extends React.PureComponent {
   }
 
   auth0Handler = async () => {
-    await initAuth0();
     this.setState({
       loading: false
     })
