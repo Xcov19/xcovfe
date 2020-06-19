@@ -7,7 +7,6 @@ import { auth0, setUser, setIsAuthenticated, isAuthenticated } from '../auth';
 class ForgotPassword extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props)
   }
 
   componentDidMount() {

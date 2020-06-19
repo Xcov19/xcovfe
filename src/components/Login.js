@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Link
 } from "react-router-dom";
-import { auth0, setUser, setIsAuthenticated, isAuthenticated } from '../auth';
+import { setIsAuthenticated, isAuthenticated } from '../auth';
 
 class Login extends React.Component {
   constructor(props) {
@@ -18,21 +18,9 @@ class Login extends React.Component {
 
   loginHandler = async (event) => {
     event.preventDefault();
-
-    // try {
-    //   await auth0().loginWithPopup({
-    //     redirect_uri: window.location.origin
-    //   });
-    // } catch (error) {
-    //   console.error(error);
-    // }
-
-    // const user = await auth0().getUser();
-    // setUser(user);
     setIsAuthenticated(true);
-
     this.props.history.push('/app/dashboard');
-  }
+  };
 
   render() {
     return (

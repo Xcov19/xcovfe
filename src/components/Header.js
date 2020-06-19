@@ -1,5 +1,6 @@
 import React from 'react';
-import { auth0 } from '../auth';
+import { withRouter } from "react-router";
+import { setIsAuthenticated } from "../auth";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -10,17 +11,16 @@ class Navbar extends React.Component {
   }
 
   logoutHandler = () => {
-    auth0().logout({
-      returnTo: window.location.origin
-    });
-  }
+    setIsAuthenticated(false);
+    this.props.history.push('/');
+  };
 
   showDropDownHandler = (event) => {
     event.preventDefault();
     this.setState({
       showDropDown: !this.state.showDropDown
     })
-  }
+  };
 
   render() {
     const {showDropDown} = this.state;
@@ -67,4 +67,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

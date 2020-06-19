@@ -1,5 +1,4 @@
 import { ADD_PROJECT } from "../actions/projects";
-
 const toObj = v => v && JSON.parse(v);
 const toStr = v => v && JSON.stringify(v);
 const PROJECTS_KEY = 'projects__00002';

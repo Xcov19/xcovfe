@@ -1,10 +1,7 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
 
-import data from '../data';
-
 function Tickets(props) {
-
   const [selectableRows, setSelectableRows] = React.useState(true);
   const [noSelectAll, setNoSelectAll] = React.useState(false);
   const [selectableRowsVisibleOnly, setSelectableRowsVisibleOnly] = React.useState(false);
@@ -133,12 +130,14 @@ function Tickets(props) {
     }
   ];
 
+  const { tickets } = props;
+
   return (
     <React.Fragment>
       <DataTable
         title={props.title}
         columns={columns}
-        data={data}
+        data={tickets}
         defaultSortField="name"
         selectableRows={selectableRows}
         conditionalRowStyles={conditionalRowStyles}
