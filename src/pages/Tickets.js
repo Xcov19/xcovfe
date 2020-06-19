@@ -5,8 +5,6 @@ import data from '../data';
 
 function Tickets(props) {
 
-  console.log(props)
-
   const [selectableRows, setSelectableRows] = React.useState(true);
   const [noSelectAll, setNoSelectAll] = React.useState(false);
   const [selectableRowsVisibleOnly, setSelectableRowsVisibleOnly] = React.useState(false);
@@ -137,11 +135,8 @@ function Tickets(props) {
 
   return (
     <React.Fragment>
-
-      <h1 className="h3 mb-4 text-gray-800">CovidX-19 Tickets</h1>
-
       <DataTable
-        title="Pandemic - CovidX"
+        title={props.title}
         columns={columns}
         data={data}
         defaultSortField="name"

@@ -1,13 +1,46 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import './Sidebar.scss';
 
-import {
-  Link
-} from "react-router-dom";
+const styles = {
+  toggleWrapper: {
+    position: 'absolute',
+    top: "50%",
+    bottom: "50%",
+    left: "12px",
+    zIndex: 99,
+  },
+  toggleButton: {
+    margin: "auto",
+    background: 'white',
+    color: 'blue',
+    borderRadius: '99px',
+    fontWeight: 700,
+    border: 'solid 2px #345bcb',
+    shadow: 'none',
+  },
+};
 
 function Sidebar() {
+  const [expandedSidebar, setExpandedSidebar] = React.useState(true);
   return (
     <React.Fragment>
-      <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <div style={styles.toggleWrapper}>
+        <Button
+          onClick={() => setExpandedSidebar(!expandedSidebar)}
+          style={styles.toggleButton}
+          className="transition"
+        >{ expandedSidebar ? '<' : '>' }</Button>
+      </div>
+
+      <ul
+        className={`
+          ${expandedSidebar ? 'expanded-sidebar' : 'collapsed-sidebar'} 
+          navbar-nav bg-gradient-primary sidebar sidebar-dark accordion transition
+          `}
+        id="accordionSidebar"
+      >
         <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
           <div className="sidebar-brand-icon rotate-n-15">
             <i className="fas fa-laugh-wink"></i>
@@ -41,7 +74,6 @@ function Sidebar() {
             <span>Profile View</span>
           </a>
         </li>
-
         {/* <div className="sidebar-heading">
           Interface
         </div>

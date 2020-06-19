@@ -50,7 +50,7 @@ const CreateProject = ({ projects, addProject }) => {
               <FileField label="Hospital contacts/phones"/>
               <FileField label="Medical inventory"/>
               <FileField label="Admin heads"/>
-              <FileField label="list of Doctors and Medical Staff"/>
+              <FileField label="List of Doctors and Medical Staff"/>
             </FormRow>
           </Form>
         </Modal.Body>
