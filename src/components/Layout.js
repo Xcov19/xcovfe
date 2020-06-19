@@ -8,9 +8,10 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import Footer from './Footer';
 
-import Dashboard from '../pages/Dashboard';
 import Project from '../pages/Project';
-import Tickets from '../pages/Tickets';
+// import Tickets from '../pages/Tickets';
+import CreateProjectContainer from "../containers/CreateProjectContainer";
+import DashboardContainer from "../containers/DashboardContainer";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -21,6 +22,9 @@ class Layout extends React.Component {
 
     return (
       <React.Fragment>
+
+        <CreateProjectContainer />
+
         <div id="wrapper">
 
           <Sidebar />
@@ -30,13 +34,12 @@ class Layout extends React.Component {
               <Header />
               <div className="container-fluid">
                 <Switch>
-                  <Route path="/app/dashboard" exact component={Dashboard} />
+                  <Route path="/app/dashboard" exact component={DashboardContainer} />
                   <Route path="/app/project/:id" exact component={Project} />
-                  <Route path="/app/project/tickets/:id" exact component={Tickets} />
+                  {/* <Route path="/app/project/tickets/:id" exact component={Tickets} /> */}
                 </Switch>
               </div>
             </div>
-            <Footer />
           </div>
         </div>
 

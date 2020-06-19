@@ -1,125 +1,124 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setIsAuthenticated, isAuthenticated } from '../auth';
+import { Field, FileField, FormRow } from "./form";
+import ReactCodeInput from 'react-code-input';
 import {
-  Link
-} from "react-router-dom";
-import { auth0, setUser, setIsAuthenticated, isAuthenticated } from '../auth';
+  Button,
+  Row,
+  Col,
+  Form,
+} from "react-bootstrap";
+import registerBanner from '../assets/register-banner.jpg';
 
-class Register extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props)
-  }
+const styles = {
+  registerPage: {
+    backgroundColor: 'white',
+    minHeight: "100vh",
+    width: "100vw",
+    margin: 0,
+  },
+  banner: {
+    backgroundImage: `url(${registerBanner})`,
+    height: "100%",
+    minHeight: "100vh",
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  },
+  title: {
+    textAlign: "center",
+    marginTop: "25%",
+    fontSize: "50px",
+    fontWeight: 700,
+    color: "black",
+  },
+  subtitle: {
+    textAlign: "center",
+    margin: "24px",
+    color: "black",
+  },
+  codeInput: {
+    marginRight:  '4px',
+    MozAppearance: 'textfield',
+    borderRadius: '6px',
+    fontSize: '20px',
+    height: '44px',
+    width: '44px',
+    padding: '4px',
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 700,
+    shadow: 'none',
+    border: 'none',
+    backgroundColor: '#DDDDDD',
+  },
+};
 
-  componentDidMount() {
+const Register = props => {
+  const [otp, setOtp] = React.useState('');
+  useEffect(() => {
     if (isAuthenticated()) {
       this.props.history.push('/app/dashboard');
     }
-  }
+  }, []);
 
-  render() {
-    return (
-      <div className="container">
+  const login = () => {
+    setIsAuthenticated(true);
+    props.history.push('/app/dashboard');
+  };
 
-        <div className="card o-hidden border-0 shadow-lg my-5">
-          <div className="card-body p-0">
-            <div className="row">
-              <div className="col-lg-3"></div>
-              <div className="col-lg-6">
-                <div className="p-5">
-                  <div className="text-center">
-                    <h1 className="h4 text-gray-900 mb-4">Create an Account!</h1>
-                  </div>
-                  <form className="user">
-                    <div className="form-group row align-items-center">
-                      <div className="col-sm-6 mb-3 mb-sm-0 text-right">
-                        <label htmlFor="selectTemplate">Template</label>
-                      </div>
-                      <div className="col-sm-6">
-                        <select id="selectTemplate" className="form-control">
-                          <option selected="true" value="covid">Covid-19</option>
-                        </select>
-                      </div>
-                    </div>
+  const bannerSubtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing " +
+      "elit. Phasellus ut magna eu neque molestie egestas. Vestibulum a sagittis " +
+      "risus. Phasellus pellentesque dapibus magna ut placerat.";
 
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" className="form-control form-control-user" id="companyName" placeholder="Company Name" />
-                      </div>
-                      <div className="col-sm-6">
-                        <input type="text" className="form-control form-control-user" id="companyAddress" placeholder="Company Address" />
-                      </div>
-                    </div>
+  return (
+      <Row style={styles.registerPage}>
+        <Col md={4} style={styles.banner}>
+          <h1 style={styles.title}>Sign Up</h1>
+          <h5 style={styles.subtitle}>{bannerSubtitle}</h5>
+        </Col>
 
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" className="form-control form-control-user" id="firstName" placeholder="First Name" />
-                      </div>
-                      <div className="col-sm-6">
-                        <input type="text" className="form-control form-control-user" id="lastName" placeholder="Last Name" />
-                      </div>
-                    </div>
+        <Col md={8}>
+          <Form onSubmit={() => {}} className="p-4">
+            <FormRow>
+              <Field label="Organisation Name"/>
+              <Field label="Organisation Address"/>
+            </FormRow>
 
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
-                        <input type="email" className="form-control form-control-user" id="inputEmail" placeholder="Email Address" />
-                      </div>
-                      <div className="col-sm-6">
-                        <input type="number" className="form-control form-control-user" id="phoneNumber" placeholder="Phone Number" />
-                      </div>
-                    </div>
+            <FormRow>
+              <Field label="First Name"/>
+              <Field label="Last Address"/>
+            </FormRow>
 
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
-                        <input type="password" className="form-control form-control-user" id="inputPassword" placeholder="Password" />
-                      </div>
-                      <div className="col-sm-6">
-                        <input type="password" className="form-control form-control-user" id="repeatPassword" placeholder="Repeat Password" />
-                      </div>
-                    </div>
+            <FormRow>
+              <Field label="Email" type="email"/>
+              <Field label="Phone number"/>
+            </FormRow>
 
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
-                        <div className="custom-control custom-checkbox small">
-                          <input type="checkbox" className="custom-control-input" id="otpPhoneCheck" />
-                          <label className="custom-control-label" htmlFor="otpPhoneCheck">Send OPT to phone</label>
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <div className="custom-control custom-checkbox small">
-                          <input type="checkbox" className="custom-control-input" id="otpEmailCheck" />
-                          <label className="custom-control-label" htmlFor="otpEmailCheck">Send OPT to email</label>
-                        </div>
-                      </div>
-                    </div>
+            <FormRow>
+              <Field label="Password" type="password"/>
+              <Field label="Confirm Password" type="password"/>
+            </FormRow>
 
+            <FormRow>
+              <Field label="Role in organisation (optional)"/>
+              <FileField label="Upload photo"/>
+            </FormRow>
 
-                    <a href="login.html" className="btn btn-primary btn-user btn-block">
-                      Register Account
-                    </a>
-                    <hr />
-                    {/* <a href="index.html" className="btn btn-google btn-user btn-block">
-                      <i className="fab fa-google fa-fw"></i> Register with Google
-                    </a>
-                    <a href="index.html" className="btn btn-facebook btn-user btn-block">
-                      <i className="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                    </a> */}
-                  </form>
-                  <hr />
-                  <div className="text-center">
-                    <Link to={`/forgot-password`} className="small">Forgot Password?</Link>
-                  </div>
-                  <div className="text-center">
-                    <Link to={`/login`} className="small">Already have an account? Login!</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <p>Send OTP to</p>
+            <Button type="submit" className="px-4">Phone</Button>
+            <span className="mx-4">or</span>
+            <Button type="submit" className="px-4">Email</Button>
 
-      </div>
-    );
-  }
-}
+            <p className="mt-4 pt-4">Enter OTP</p>
+            <ReactCodeInput type='number' fields={4} inputStyle={styles.codeInput} onChange={setOtp}/>
+            <p className="mt-4">Did not receive OTP? <a className="mx-2" href="#">RESEND</a></p>
+
+            <Button onClick={login} disabled={otp.length !== 4} type="submit" className="px-4">Get Started</Button>
+          </Form>
+        </Col>
+      </Row>
+  );
+};
 
 export default Register;
