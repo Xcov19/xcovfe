@@ -6,10 +6,10 @@ import { stageNames } from "../data/stages";
 const AdmissionForm = ({ tickets, ticketId, editTicket }) => {
   const ticket = tickets.find(({ id }) => ticketId == id);
   const withEvent = method => event => method(event.target.value);
-  const setAttendingHospitalStaff = withEvent(caseId => editTicket({ ...ticket, attendingHospitalStaff }));
-  const setOnDutyDoctor = withEvent(stage => editTicket({ ...ticket, onDutyDoctor }));
-  const setNoOfWardBeds = withEvent(createdBy => editTicket({ ...ticket, noOfWardBeds }));
-  const setIntensiveCareUnitBeds = withEvent(closedBy => editTicket({ ...ticket, intensiveCareUnitBeds }));
+  const setAttendingHospitalStaff = withEvent(attendingHospitalStaff => editTicket({ ...ticket, attendingHospitalStaff }));
+  const setOnDutyDoctor = withEvent(onDutyDoctor => editTicket({ ...ticket, onDutyDoctor }));
+  const setNoOfWardBeds = withEvent(noOfWardBeds => editTicket({ ...ticket, noOfWardBeds }));
+  const setIntensiveCareUnitBeds = withEvent(intensiveCareUnitBeds => editTicket({ ...ticket, intensiveCareUnitBeds }));
 
   return (
     <Form>

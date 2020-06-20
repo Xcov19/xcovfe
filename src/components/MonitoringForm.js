@@ -7,13 +7,13 @@ const AdmissionForm = ({ tickets, ticketId, editTicket }) => {
   const ticket = tickets.find(({ id }) => ticketId == id);
   const withEvent = method => event => method(event.target.value);
 
-  const setRMDutyDoctor = withEvent(caseId => editTicket({ ...ticket, rmDutyDoctor }));
-  const setVitalStats = withEvent(stage => editTicket({ ...ticket, vitalStats }));
-  const setRoutineDailyTestsRecord = withEvent(createdBy => editTicket({ ...ticket, routineDailyTestsRecord }));
-  const setDoctorRecordForDailyRounds = withEvent(closedBy => editTicket({ ...ticket, doctorRecordForDailyRounds }));
-  const setActiveNursingDetails = withEvent(closedBy => editTicket({ ...ticket, activeNursingDetails }));
-  const setParamedicalStaff = withEvent(closedBy => editTicket({ ...ticket, paramedicalStaff }));
-  const setPeriodicCovidReport = withEvent(closedBy => editTicket({ ...ticket, periodicCovidReport }));
+  const setRMDutyDoctor = withEvent(rmDutyDoctor => editTicket({ ...ticket, rmDutyDoctor }));
+  const setVitalStats = withEvent(vitalStats => editTicket({ ...ticket, vitalStats }));
+  const setRoutineDailyTestsRecord = withEvent(routineDailyTestsRecord => editTicket({ ...ticket, routineDailyTestsRecord }));
+  const setDoctorRecordForDailyRounds = withEvent(doctorRecordForDailyRounds => editTicket({ ...ticket, doctorRecordForDailyRounds }));
+  const setActiveNursingDetails = withEvent(activeNursingDetails => editTicket({ ...ticket, activeNursingDetails }));
+  const setParamedicalStaff = withEvent(paramedicalStaff => editTicket({ ...ticket, paramedicalStaff }));
+  const setPeriodicCovidReport = withEvent(periodicCovidReport => editTicket({ ...ticket, periodicCovidReport }));
 
   return (
     <Form>

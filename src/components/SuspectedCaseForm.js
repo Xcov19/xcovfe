@@ -11,17 +11,17 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
   const setCreatedBy = withEvent(createdBy => editTicket({ ...ticket, createdBy }));
   const setClosedBy = withEvent(closedBy => editTicket({ ...ticket, closedBy }));
 
-  const setPatientName = withEvent(closedBy => editTicket({ ...ticket, patientName }));
-  const setPatientAge = withEvent(closedBy => editTicket({ ...ticket, patientAge }));
-  const setPatientResidentialStatus = withEvent(closedBy => editTicket({ ...ticket, patientResidentialStatus }));
-  const setPatientAddress = withEvent(closedBy => editTicket({ ...ticket, patientAddress }));
-  const setPatientContactNumber = withEvent(closedBy => editTicket({ ...ticket, patientContactNumber }));
-  const setPatientAddress2 = withEvent(closedBy => editTicket({ ...ticket, patientAddress2 }));
-  const setTemperature = withEvent(closedBy => editTicket({ ...ticket, temperature }));
-  const setPatientDOB = withEvent(closedBy => editTicket({ ...ticket, patientDOB }));
-  const setCoexistingDiseases = withEvent(closedBy => editTicket({ ...ticket, coexistingDiseases }));
-  const setHistoryOfContact = withEvent(closedBy => editTicket({ ...ticket, historyOfContact }));
-  const setTravelHistory = withEvent(closedBy => editTicket({ ...ticket, travelHistory }));
+  const setPatientName = withEvent(patientName => editTicket({ ...ticket, patientName }));
+  const setPatientAge = withEvent(patientAge => editTicket({ ...ticket, patientAge }));
+  const setPatientResidentialStatus = withEvent(patientResidentialStatus => editTicket({ ...ticket, patientResidentialStatus }));
+  const setPatientAddress = withEvent(patientAddress => editTicket({ ...ticket, patientAddress }));
+  const setPatientContactNumber = withEvent(patientContactNumber => editTicket({ ...ticket, patientContactNumber }));
+  const setPatientAddress2 = withEvent(patientAddress2 => editTicket({ ...ticket, patientAddress2 }));
+  const setTemperature = withEvent(temperature => editTicket({ ...ticket, temperature }));
+  const setPatientDOB = withEvent(patientDOB => editTicket({ ...ticket, patientDOB }));
+  const setCoexistingDiseases = withEvent(coexistingDiseases => editTicket({ ...ticket, coexistingDiseases }));
+  const setHistoryOfContact = withEvent(historyOfContact => editTicket({ ...ticket, historyOfContact }));
+  const setTravelHistory = withEvent(travelHistory => editTicket({ ...ticket, travelHistory }));
 
   return (
     <Form>

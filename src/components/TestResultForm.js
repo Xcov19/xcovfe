@@ -7,11 +7,11 @@ const TestResultForm = ({ tickets, ticketId, editTicket }) => {
   const ticket = tickets.find(({ id }) => ticketId == id);
   const withEvent = method => event => method(event.target.value);
 
-  const setPatientReport = withEvent(caseId => editTicket({ ...ticket, patientReport }));
-  const setPreExistingDisease = withEvent(stage => editTicket({ ...ticket, preExistingDisease }));
-  const setPatientBed = withEvent(createdBy => editTicket({ ...ticket, patientBed }));
-  const setCaseHistory = withEvent(closedBy => editTicket({ ...ticket, caseHistory }));
-  const setSeverityAssessmentReport = withEvent(closedBy => editTicket({ ...ticket, severityAssessmentReport }));
+  const setPatientReport = withEvent(patientReport => editTicket({ ...ticket, patientReport }));
+  const setPreExistingDisease = withEvent(preExistingDisease => editTicket({ ...ticket, preExistingDisease }));
+  const setPatientBed = withEvent(patientBed => editTicket({ ...ticket, patientBed }));
+  const setCaseHistory = withEvent(caseHistory => editTicket({ ...ticket, caseHistory }));
+  const setSeverityAssessmentReport = withEvent(severityAssessmentReport => editTicket({ ...ticket, severityAssessmentReport }));
 
   return (
     <Form>
