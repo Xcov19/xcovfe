@@ -9,8 +9,6 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
   const setCaseId = withEvent(caseId => editTicket({ ...ticket, caseId }));
   const setStage = withEvent(stage => editTicket({ ...ticket, stage }));
   const setCreatedBy = withEvent(createdBy => editTicket({ ...ticket, createdBy }));
-  const setClosedBy = withEvent(closedBy => editTicket({ ...ticket, closedBy }));
-
   const setPatientName = withEvent(patientName => editTicket({ ...ticket, patientName }));
   const setPatientAge = withEvent(patientAge => editTicket({ ...ticket, patientAge }));
   const setPatientResidentialStatus = withEvent(patientResidentialStatus => editTicket({ ...ticket, patientResidentialStatus }));
@@ -32,7 +30,6 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
       </FormRow>
       <FormRow>
         <Field label="Created By" value={ticket.createdBy} onChange={setCreatedBy} />
-        {/* <Field label="Closed By" value={ticket.closedBy} onChange={setClosedBy}/> */}
       </FormRow>
 
       <h3>Patient Details</h3>

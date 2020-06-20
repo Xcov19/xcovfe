@@ -4,8 +4,8 @@ import { withRouter } from "react-router";
 
 import TicketFormModal from "../components/TicketFormModal";
 import SuspectedCaseFormContainer from "../containers/SuspectedCaseFormContainer";
+import Tickets from "../components/Tickets";
 
-import TicketsContainer from "../containers/TicketsContainer";
 const contentHeight = 'calc(100vh - 100px)';
 const styles = {
   toggleWrapper: {
@@ -61,7 +61,12 @@ const styles = {
     fontSize: 14,
     position: "absolute",
     right: 0
-  }
+  },
+  casesHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: 12,
+  },
 };
 
 const Notification = () =>
@@ -103,12 +108,8 @@ const Notifications = () => {
   )
 };
 
-const CasesOverview = ({ history }) => {
-  const [expanded, setExpanded] = useState(false);
-  const openTicket = (id) => {
-    history.push(`/app/project/tickets/${id}`)
-  };
-
+const CasesOverview = () => {
+  const [expanded, setExpanded] = useState(true);
   return (
     <div>
       <Button onClick={() => setExpanded(true)} className="mt-4">Show cases</Button>
@@ -117,11 +118,14 @@ const CasesOverview = ({ history }) => {
         style={expanded ? styles.casesOverview : styles.hideCasesOverview}
         className="transition"
       >
-        <Button onClick={() => setExpanded(false)}>Close cases</Button>
-        <TicketsContainer
-          title="Pandemic - CovidX"
-          openTicket={openTicket}
-        />
+        <div style={styles.casesHeader}>
+          <h3>Project Title</h3>
+          <span>
+            <Button onClick={() => {}} className="mr-2">Add Patient</Button>
+            <Button onClick={() => setExpanded(false)}>Close cases</Button>
+          </span>
+        </div>
+        <Tickets />
       </div>
     </div>
   )
@@ -153,7 +157,7 @@ const Project = ({ history }) => {
   };
   const addNewTicket = () => {
     setOpened(!opened)
-  }
+  };
 
   return <Row style={styles.contentWrapper}>
     <Col>
@@ -178,7 +182,7 @@ const Project = ({ history }) => {
         <ProjectCard />
       </Row>
 
-      <CasesOverview history={history} />
+      <CasesOverview />
     </Col>
 
     <Notifications />

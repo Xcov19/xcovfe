@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Tickets from "../components/Tickets";
+import TicketsTable from "../components/TicketsTable";
 
 const mapStateToProps = (state) => ({
   tickets: state.tickets || [],
@@ -9,9 +9,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 });
 
-const TicketsContainer = connect(
+const TicketsTableContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Tickets);
+)(TicketsTable);
 
-export default TicketsContainer;
+export default TicketsTableContainer;
