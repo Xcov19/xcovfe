@@ -1,12 +1,11 @@
 import React from 'react';
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { Field, FormRow, MultipleFields, Select } from "./form";
 import { stageNames } from "../data/stages";
 
-const AdmissionForm = ({ tickets, ticketId, editTicket }) => {
+const AdmissionForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const ticket = tickets.find(({ id }) => ticketId == id);
   const withEvent = method => event => method(event.target.value);
-
   const setRMDutyDoctor = withEvent(rmDutyDoctor => editTicket({ ...ticket, rmDutyDoctor }));
   const setVitalStats = withEvent(vitalStats => editTicket({ ...ticket, vitalStats }));
   const setRoutineDailyTestsRecord = withEvent(routineDailyTestsRecord => editTicket({ ...ticket, routineDailyTestsRecord }));
@@ -15,9 +14,14 @@ const AdmissionForm = ({ tickets, ticketId, editTicket }) => {
   const setParamedicalStaff = withEvent(paramedicalStaff => editTicket({ ...ticket, paramedicalStaff }));
   const setPeriodicCovidReport = withEvent(periodicCovidReport => editTicket({ ...ticket, periodicCovidReport }));
 
+  const submit = () => {
+    editTicket({ ...ticket, stage: 'case_monitoring' })
+    closeModal()
+  }
+
   return (
     <Form>
-      <h3>Test Result Form</h3>
+      <h3>Case Monitoring Form</h3>
       <FormRow>
         <Field label="RM/On duty Doctor" value={ticket.rmDutyDoctor} onChange={setRMDutyDoctor} />
         <Field label="Vital Stats 8 hourly record" value={ticket.vitalStats} onChange={setVitalStats} />
@@ -32,6 +36,9 @@ const AdmissionForm = ({ tickets, ticketId, editTicket }) => {
       </FormRow>
       <FormRow>
         <Field label="Periodic Covid Report" value={ticket.periodicCovidReport} onChange={setPeriodicCovidReport} />
+      </FormRow>
+      <FormRow>
+        <Button onClick={submit}>Submit</Button>
       </FormRow>
     </Form>
   )
