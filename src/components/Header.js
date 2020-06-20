@@ -10,9 +10,10 @@ class Navbar extends React.Component {
     }
   }
 
-  logoutHandler = () => {
+  logoutHandler = (event) => {
+    event.preventDefault()
     setIsAuthenticated(false);
-    this.props.history.push('/');
+    this.props.history.push('/login');
   };
 
   showDropDownHandler = (event) => {
