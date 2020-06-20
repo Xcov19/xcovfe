@@ -3,27 +3,6 @@ import DataTable from 'react-data-table-component';
 
 function Tickets(props) {
   const [selectableRows, setSelectableRows] = React.useState(true);
-  const [noSelectAll, setNoSelectAll] = React.useState(false);
-  const [selectableRowsVisibleOnly, setSelectableRowsVisibleOnly] = React.useState(false);
-  const [selectableRowsHighlight, setSelectableRowsHighlight] = React.useState(false);
-  const [expandableRows, setExpandableRows] = React.useState(false);
-  const [expandOnRowClick, setExpandOnRowClick] = React.useState(false);
-  const [pagination, setPagination] = React.useState(true);
-  const [highlight, setHighlight] = React.useState(false);
-  const [striped, setStriped] = React.useState(false);
-  const [pointer, setPointer] = React.useState(false);
-  const [dense, setDense] = React.useState(false);
-  const [persist, setPersist] = React.useState(false);
-  const [tableHead, setNoHead] = React.useState(false);
-  const [noContextMenu, setNoContextMenu] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
-  const [noHeader, setNoHeader] = React.useState(false);
-  const [subHeader, setSubHeader] = React.useState(false);
-  const [subHeaderAlign, setSubHeaderAlign] = React.useState('right');
-  const [fixedHeader, setFixedheader] = React.useState(false);
-  const [direction, setDirection] = React.useState(false);
-  const [directionValue, setDirectionValue] = React.useState('auto');
-
 
   const StageTitle = ({ row }) => {
     if (row.stage === 'open_case_suspect') {
@@ -63,7 +42,18 @@ function Tickets(props) {
     }
   };
 
+  const handleButtonClick = (row) => {
+    props.openTicket(row.id)
+  };
+
   const columns = [
+    {
+      
+      cell: (row) => <button onClick={() => {handleButtonClick(row)}}>View</button>,
+      ignoreRowClick: true,
+      allowOverflow: true,
+      button: true,
+    },
     {
       name: 'Name',
       selector: 'name',
