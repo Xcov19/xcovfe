@@ -65,7 +65,7 @@ const styles = {
   casesHeader: {
     display: 'flex',
     justifyContent: 'space-between',
-    padding: 12,
+    padding: 16,
   },
 };
 
