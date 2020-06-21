@@ -1,34 +1,36 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
-import STAGES, { stagesMap } from "../data/stages";
+import { stagesMap } from "../data/stages";
 import { withRouter } from "react-router";
+import { Badge, Row } from "react-bootstrap";
 
 const StageCell = ({ row }) => {
-  const stageName = stagesMap[row.stage].name;
-  return <div>{stageName}</div>;
+  const stage = stagesMap[row.stage];
+  const style = {
+    backgroundColor: stage.color,
+    color: 'white',
+    fontSize: 12,
+  };
+  return <Badge pill style={style}>
+    {stage.name}
+  </Badge>
 };
-
 
 const TicketsTable = ({ history, tickets, stages }) => {
   const openTicket = id => history.push(`/app/project/tickets/${id}`);
-  const handleButtonClick = (row) => {
-    openTicket(row.id)
-  };
-
-  const filterTickets = (tickets, stages) => tickets.filter(
+  const onRowClicked = ({ id }) => openTicket(id);
+  const filteredTickets = tickets.filter(
     ticket => stages.includes(ticket.stage)
   );
 
+  const SearchColumn = props => {
+    return <div></div>
+  };
+
   const columns = [
     {
-      cell: (row) => <button onClick={() => { handleButtonClick(row) }}>View</button>,
-      ignoreRowClick: true,
-      allowOverflow: true,
-      button: true,
-    },
-    {
-      name: 'Name',
-      selector: 'name',
+      name: 'Case ID',
+      selector: 'caseId',
       sortable: true,
     },
     {
@@ -38,36 +40,78 @@ const TicketsTable = ({ history, tickets, stages }) => {
       cell: row => <StageCell row={row} />,
     },
     {
-      name: 'Contacts and Organisation',
-      selector: 'organisation',
+      name: 'Name',
+      selector: 'patientName',
       sortable: true,
     },
     {
-      name: 'Notes',
-      selector: 'notes',
+      name: 'Severity',
+      selector: 'severityAssessmentReport',
       sortable: true,
     },
     {
-      name: 'Assign To',
-      selector: 'assign',
+      name: 'Test status',
+      selector: 'testStatus',
+      sortable: true,
+    },
+    {
+      name: 'Test result',
+      selector: 'testResult',
+      sortable: true,
+    },
+    {
+      name: 'District',
+      selector: 'district',
+      sortable: true,
+    },
+    {
+      name: 'Age',
+      selector: 'patientAge',
+      sortable: true,
+    },
+    {
+      name: 'Gender',
+      selector: 'gender',
+      sortable: true,
+    },
+    {
+      name: 'Contact Number',
+      selector: 'patientContactNumber',
+      sortable: true,
+    },
+    {
+      name: 'On duty doctor',
+      selector: 'rmDutyDoctor',
+      sortable: true,
+    },
+    {
+      name: 'Created On',  // todo set this value in action creator
+      selector: 'createdOn',
+      sortable: true,
+    },
+    {
+      name: 'Last Updated',  // todo set this value in action creator
+      selector: 'lastUpdated',
       sortable: true,
     },
   ];
 
-  const conditionalRowStyles = STAGES.map(stage => ({
-    when: row => row.stage === stage.key,
-    style: {
-      backgroundColor: stage.color,
-      color: 'white'
-    }
-  }));
-  return <DataTable
-        columns={columns}
-        data={filterTickets(tickets, stages)}
-        defaultSortField="name"
-        conditionalRowStyles={conditionalRowStyles}
-        pagination
-      />;
+  return <React.Fragment>
+    <Row>
+      { columns.map(column => <SearchColumn column={column} />) }
+    </Row>
+    <DataTable
+      columns={columns}
+      data={filteredTickets}
+      onRowClicked={onRowClicked}
+      defaultSortField="caseId"
+      pagination
+      striped
+      highlightOnHover
+      pointerOnHover
+      dense
+    />
+  </React.Fragment>;
 };
 
 export default withRouter(TicketsTable);
