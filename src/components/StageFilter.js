@@ -50,6 +50,7 @@ const Stage = ({ stage, onToggle, value }) => {
 };
 
 const StageFilter = ({ onChange, value }) => {
+  const noStagesSelected = value.length === 0;
   const toggleStage = stage => {
     if (value.includes(stage.key)) {
       onChange(value.filter(v => v !== stage.key))
@@ -61,7 +62,7 @@ const StageFilter = ({ onChange, value }) => {
     { stages.map(stage =>
       <Stage
         stage={stage}
-        value={value.includes(stage.key)}
+        value={noStagesSelected || value.includes(stage.key)}
         onToggle={() => toggleStage(stage)}
       />
     )}
