@@ -2,6 +2,7 @@ export default [
   {
     "id": 1,
     "patientName": "Beetlejuice",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Tim Burton",
     "assign": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
@@ -10,6 +11,7 @@ export default [
   {
     "id": 2,
     "patientName": "The Cotton Club",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Francis Ford Coppola",
     "assign": "Richard Gere, Gregory Hines, Diane Lane, Lonette McKee",
@@ -18,6 +20,7 @@ export default [
   {
     "id": 3,
     "patientName": "The Shawshank Redemption",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Frank Darabont",
     "assign": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
@@ -26,6 +29,7 @@ export default [
   {
     "id": 4,
     "patientName": "Crocodile Dundee",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Peter Faiman",
     "assign": "Paul Hogan, Linda Kozlowski, John Meillon, David Gulpilil",
@@ -34,6 +38,7 @@ export default [
   {
     "id": 5,
     "patientName": "Valkyrie",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Bryan Singer",
     "assign": "Tom Cruise, Kenneth Branagh, Bill Nighy, Tom Wilkinson",
@@ -42,6 +47,7 @@ export default [
   {
     "id": 6,
     "patientName": "Ratatouille",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Brad Bird, Jan Pinkava",
     "assign": "Patton Oswalt, Ian Holm, Lou Romano, Brian Dennehy",
@@ -50,6 +56,7 @@ export default [
   {
     "id": 7,
     "patientName": "City of God",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Fernando Meirelles, Kátia Lund",
     "assign": "Alexandre Rodrigues, Leandro Firmino, Phellipe Haagensen, Douglas Silva",
@@ -58,6 +65,7 @@ export default [
   {
     "id": 8,
     "patientName": "Memento",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Christopher Nolan",
     "assign": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior",
@@ -66,6 +74,7 @@ export default [
   {
     "id": 9,
     "patientName": "The Intouchables",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Olivier Nakache, Eric Toledano",
     "assign": "François Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot",
@@ -74,6 +83,7 @@ export default [
   {
     "id": 10,
     "patientName": "Stardust",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Matthew Vaughn",
     "assign": "Ian McKellen, Bimbo Hart, Alastair MacIntosh, David Kelly",
@@ -82,6 +92,7 @@ export default [
   {
     "id": 11,
     "patientName": "Apocalypto",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Mel Gibson",
     "assign": "Rudy Youngblood, Dalia Hernández, Jonathan Brewer, Morris Birdyellowhead",
@@ -90,6 +101,7 @@ export default [
   {
     "id": 12,
     "patientName": "Taxi Driver",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Martin Scorsese",
     "assign": "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito",
@@ -98,6 +110,7 @@ export default [
   {
     "id": 13,
     "patientName": "No Country for Old Men",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Ethan Coen, Joel Coen",
     "assign": "Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson",
@@ -106,6 +119,7 @@ export default [
   {
     "id": 14,
     "patientName": "Planet 51",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Jorge Blanco, Javier Abad, Marcos Martínez",
     "assign": "Jessica Biel, John Cleese, Gary Oldman, Dwayne Johnson",
@@ -114,6 +128,7 @@ export default [
   {
     "id": 15,
     "patientName": "Looper",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Rian Johnson",
     "assign": "Joseph Gordon-Levitt, Bruce Willis, Emily Blunt, Paul Dano",
@@ -122,6 +137,7 @@ export default [
   {
     "id": 16,
     "patientName": "Corpse Bride",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Tim Burton, Mike Johnson",
     "assign": "Johnny Depp, Helena Bonham Carter, Emily Watson, Tracey Ullman",
@@ -130,6 +146,7 @@ export default [
   {
     "id": 17,
     "patientName": "The Third Man",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Carol Reed",
     "assign": "Joseph Cotten, Alida Valli, Orson Welles, Trevor Howard",
@@ -138,6 +155,7 @@ export default [
   {
     "id": 18,
     "patientName": "The Beach",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Danny Boyle",
     "assign": "Leonardo DiCaprio, Daniel York, Patcharawan Patarakijjanon, Virginie Ledoyen",
@@ -146,6 +164,7 @@ export default [
   {
     "id": 19,
     "patientName": "Scarface",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Brian De Palma",
     "assign": "Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio",
@@ -154,6 +173,7 @@ export default [
   {
     "id": 20,
     "patientName": "Sid and Nancy",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Alex Cox",
     "assign": "Gary Oldman, Chloe Webb, David Hayman, Debby Bishop",
@@ -162,6 +182,7 @@ export default [
   {
     "id": 21,
     "patientName": "Black Swan",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Darren Aronofsky",
     "assign": "Natalie Portman, Mila Kunis, Vincent Cassel, Barbara Hershey",
@@ -170,6 +191,7 @@ export default [
   {
     "id": 22,
     "patientName": "Inception",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Christopher Nolan",
     "assign": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
@@ -178,6 +200,7 @@ export default [
   {
     "id": 23,
     "patientName": "The Deer Hunter",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Michael Cimino",
     "assign": "Robert De Niro, John Cazale, John Savage, Christopher Walken",
@@ -186,6 +209,7 @@ export default [
   {
     "id": 24,
     "patientName": "Chasing Amy",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Kevin Smith",
     "assign": "Ethan Suplee, Ben Affleck, Scott Mosier, Jason Lee",
@@ -194,6 +218,7 @@ export default [
   {
     "id": 25,
     "patientName": "Django Unchained",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Quentin Tarantino",
     "assign": "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington",
@@ -202,6 +227,7 @@ export default [
   {
     "id": 26,
     "patientName": "The Silence of the Lambs",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Jonathan Demme",
     "assign": "Jodie Foster, Lawrence A. Bonney, Kasi Lemmons, Lawrence T. Wrentz",
@@ -210,6 +236,7 @@ export default [
   {
     "id": 27,
     "patientName": "American Beauty",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Sam Mendes",
     "assign": "Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley",
@@ -218,6 +245,7 @@ export default [
   {
     "id": 28,
     "patientName": "Snatch",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Guy Ritchie",
     "assign": "Benicio Del Toro, Dennis Farina, Vinnie Jones, Brad Pitt",
@@ -226,6 +254,7 @@ export default [
   {
     "id": 29,
     "patientName": "Midnight Express",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Alan Parker",
     "assign": "Brad Davis, Irene Miracle, Bo Hopkins, Paolo Bonacelli",
@@ -234,6 +263,7 @@ export default [
   {
     "id": 30,
     "patientName": "Pulp Fiction",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Quentin Tarantino",
     "assign": "Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta",
@@ -242,6 +272,7 @@ export default [
   {
     "id": 31,
     "patientName": "Lock, Stock and Two Smoking Barrels",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Guy Ritchie",
     "assign": "Jason Flemyng, Dexter Fletcher, Nick Moran, Jason Statham",
@@ -250,6 +281,7 @@ export default [
   {
     "id": 32,
     "patientName": "Lucky Number Slevin",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Paul McGuigan",
     "assign": "Josh Hartnett, Bruce Willis, Lucy Liu, Morgan Freeman",
@@ -258,6 +290,7 @@ export default [
   {
     "id": 33,
     "patientName": "Rear Window",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Alfred Hitchcock",
     "assign": "James Stewart, Grace Kelly, Wendell Corey, Thelma Ritter",
@@ -266,6 +299,7 @@ export default [
   {
     "id": 34,
     "patientName": "Pan's Labyrinth",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Guillermo del Toro",
     "assign": "Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones",
@@ -274,6 +308,7 @@ export default [
   {
     "id": 35,
     "patientName": "Shutter Island",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Martin Scorsese",
     "assign": "Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley, Max von Sydow",
@@ -282,6 +317,7 @@ export default [
   {
     "id": 36,
     "patientName": "Reservoir Dogs",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Quentin Tarantino",
     "assign": "Harvey Keitel, Tim Roth, Michael Madsen, Chris Penn",
@@ -290,6 +326,7 @@ export default [
   {
     "id": 37,
     "patientName": "The Shining",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Stanley Kubrick",
     "assign": "Jack Nicholson, Shelley Duvall, Danny Lloyd, Scatman Crothers",
@@ -298,6 +335,7 @@ export default [
   {
     "id": 38,
     "patientName": "Midnight in Paris",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Woody Allen",
     "assign": "Owen Wilson, Rachel McAdams, Kurt Fuller, Mimi Kennedy",
@@ -306,6 +344,7 @@ export default [
   {
     "id": 39,
     "patientName": "Les Misérables",
+    "showStageButton": 1,
     "stage": "open_case_suspect",
     "organisation": "Tom Hooper",
     "assign": "Hugh Jackman, Russell Crowe, Anne Hathaway, Amanda Seyfried",
@@ -314,6 +353,7 @@ export default [
   {
     "id": 40,
     "patientName": "L.A. Confidential",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Curtis Hanson",
     "assign": "Kevin Spacey, Russell Crowe, Guy Pearce, James Cromwell",
@@ -322,6 +362,7 @@ export default [
   {
     "id": 41,
     "patientName": "Moneyball",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Bennett Miller",
     "assign": "Brad Pitt, Jonah Hill, Philip Seymour Hoffman, Robin Wright",
@@ -330,6 +371,7 @@ export default [
   {
     "id": 42,
     "patientName": "The Hangover",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Todd Phillips",
     "assign": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha",
@@ -338,6 +380,7 @@ export default [
   {
     "id": 43,
     "patientName": "The Great Beauty",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Paolo Sorrentino",
     "assign": "Toni Servillo, Carlo Verdone, Sabrina Ferilli, Carlo Buccirosso",
@@ -346,6 +389,7 @@ export default [
   {
     "id": 44,
     "patientName": "Gran Torino",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Clint Eastwood",
     "assign": "Clint Eastwood, Christopher Carley, Bee Vang, Ahney Her",
@@ -354,6 +398,7 @@ export default [
   {
     "id": 45,
     "patientName": "Mary and Max",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Adam Elliot",
     "assign": "Toni Collette, Philip Seymour Hoffman, Barry Humphries, Eric Bana",
@@ -362,6 +407,7 @@ export default [
   {
     "id": 46,
     "patientName": "Flight",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Robert Zemeckis",
     "assign": "Nadine Velazquez, Denzel Washington, Carter Cabassa, Adam C. Edwards",
@@ -370,6 +416,7 @@ export default [
   {
     "id": 47,
     "patientName": "One Flew Over the Cuckoo's Nest",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Milos Forman",
     "assign": "Michael Berryman, Peter Brocco, Dean R. Brooks, Alonzo Brown",
@@ -378,6 +425,7 @@ export default [
   {
     "id": 48,
     "patientName": "Requiem for a Dream",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Darren Aronofsky",
     "assign": "Ellen Burstyn, Jared Leto, Jennifer Connelly, Marlon Wayans",
@@ -386,6 +434,7 @@ export default [
   {
     "id": 49,
     "patientName": "The Truman Show",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Peter Weir",
     "assign": "Jim Carrey, Laura Linney, Noah Emmerich, Natascha McElhone",
@@ -394,6 +443,7 @@ export default [
   {
     "id": 50,
     "patientName": "The Artist",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Michel Hazanavicius",
     "assign": "Jean Dujardin, Bérénice Bejo, John Goodman, James Cromwell",
@@ -402,6 +452,7 @@ export default [
   {
     "id": 51,
     "patientName": "Forrest Gump",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Robert Zemeckis",
     "assign": "Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys",
@@ -410,6 +461,7 @@ export default [
   {
     "id": 52,
     "patientName": "The Hobbit: The Desolation of Smaug",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Peter Jackson",
     "assign": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
@@ -418,6 +470,7 @@ export default [
   {
     "id": 53,
     "patientName": "Vicky Cristina Barcelona",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Woody Allen",
     "assign": "Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina",
@@ -426,6 +479,7 @@ export default [
   {
     "id": 54,
     "patientName": "Slumdog Millionaire",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Danny Boyle, Loveleen Tandan",
     "assign": "Dev Patel, Saurabh Shukla, Anil Kapoor, Rajendranath Zutshi",
@@ -434,6 +488,7 @@ export default [
   {
     "id": 55,
     "patientName": "Lost in Translation",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Sofia Coppola",
     "assign": "Scarlett Johansson, Bill Murray, Akiko Takeshita, Kazuyoshi Minamimagoe",
@@ -442,6 +497,7 @@ export default [
   {
     "id": 56,
     "patientName": "Match Point",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Woody Allen",
     "assign": "Jonathan Rhys Meyers, Alexander Armstrong, Paul Kaye, Matthew Goode",
@@ -450,6 +506,7 @@ export default [
   {
     "id": 57,
     "patientName": "Psycho",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Alfred Hitchcock",
     "assign": "Anthony Perkins, Vera Miles, John Gavin, Janet Leigh",
@@ -458,6 +515,7 @@ export default [
   {
     "id": 58,
     "patientName": "North by Northwest",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Alfred Hitchcock",
     "assign": "Cary Grant, Eva Marie Saint, James Mason, Jessie Royce Landis",
@@ -466,6 +524,7 @@ export default [
   {
     "id": 59,
     "patientName": "Madagascar: Escape 2 Africa",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Eric Darnell, Tom McGrath",
     "assign": "Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith",
@@ -474,6 +533,7 @@ export default [
   {
     "id": 60,
     "patientName": "Despicable Me 2",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Pierre Coffin, Chris Renaud",
     "assign": "Steve Carell, Kristen Wiig, Benjamin Bratt, Miranda Cosgrove",
@@ -482,6 +542,7 @@ export default [
   {
     "id": 61,
     "patientName": "Downfall",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Oliver Hirschbiegel",
     "assign": "Bruno Ganz, Alexandra Maria Lara, Corinna Harfouch, Ulrich Matthes",
@@ -490,6 +551,7 @@ export default [
   {
     "id": 62,
     "patientName": "Madagascar",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Eric Darnell, Tom McGrath",
     "assign": "Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith",
@@ -498,6 +560,7 @@ export default [
   {
     "id": 63,
     "patientName": "Madagascar 3: Europe's Most Wanted",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Eric Darnell, Tom McGrath, Conrad Vernon",
     "assign": "Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith",
@@ -506,6 +569,7 @@ export default [
   {
     "id": 64,
     "patientName": "God Bless America",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Bobcat Goldthwait",
     "assign": "Joel Murray, Tara Lynne Barr, Melinda Page Hamilton, Mackenzie Brooke Smith",
@@ -514,6 +578,7 @@ export default [
   {
     "id": 65,
     "patientName": "The Social Network",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "David Fincher",
     "assign": "Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons",
@@ -522,6 +587,7 @@ export default [
   {
     "id": 66,
     "patientName": "The Pianist",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Roman Polanski",
     "assign": "Adrien Brody, Emilia Fox, Michal Zebrowski, Ed Stoppard",
@@ -530,6 +596,7 @@ export default [
   {
     "id": 67,
     "patientName": "Alive",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Frank Marshall",
     "assign": "Ethan Hawke, Vincent Spano, Josh Hamilton, Bruce Ramsay",
@@ -538,6 +605,7 @@ export default [
   {
     "id": 68,
     "patientName": "Casablanca",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Michael Curtiz",
     "assign": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
@@ -546,6 +614,7 @@ export default [
   {
     "id": 69,
     "patientName": "American Gangster",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Ridley Scott",
     "assign": "Denzel Washington, Russell Crowe, Chiwetel Ejiofor, Josh Brolin",
@@ -554,6 +623,7 @@ export default [
   {
     "id": 70,
     "patientName": "Catch Me If You Can",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Steven Spielberg",
     "assign": "Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen",
@@ -562,6 +632,7 @@ export default [
   {
     "id": 71,
     "patientName": "American History X",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Tony Kaye",
     "assign": "Edward Norton, Edward Furlong, Beverly D'Angelo, Jennifer Lien",
@@ -570,6 +641,7 @@ export default [
   {
     "id": 72,
     "patientName": "Casino",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Martin Scorsese",
     "assign": "Robert De Niro, Sharon Stone, Joe Pesci, James Woods",
@@ -578,6 +650,7 @@ export default [
   {
     "id": 73,
     "patientName": "Pirates of the Caribbean: At World's End",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Gore Verbinski",
     "assign": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley",
@@ -586,6 +659,7 @@ export default [
   {
     "id": 74,
     "patientName": "Pirates of the Caribbean: On Stranger Tides",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Rob Marshall",
     "assign": "Johnny Depp, Penélope Cruz, Geoffrey Rush, Ian McShane",
@@ -594,6 +668,7 @@ export default [
   {
     "id": 75,
     "patientName": "Crash",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Paul Haggis",
     "assign": "Karina Arroyave, Dato Bakhtadze, Sandra Bullock, Don Cheadle",
@@ -602,6 +677,7 @@ export default [
   {
     "id": 76,
     "patientName": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Gore Verbinski",
     "assign": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley",
@@ -610,6 +686,7 @@ export default [
   {
     "id": 77,
     "patientName": "The Lord of the Rings: The Return of the King",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Peter Jackson",
     "assign": "Noel Appleby, Ali Astin, Sean Astin, David Aston",
@@ -618,6 +695,7 @@ export default [
   {
     "id": 78,
     "patientName": "Oldboy",
+    "showStageButton": 1,
     "stage": "test_result",
     "organisation": "Chan-wook Park",
     "assign": "Min-sik Choi, Ji-tae Yu, Hye-jeong Kang, Dae-han Ji",
@@ -626,6 +704,7 @@ export default [
   {
     "id": 79,
     "patientName": "Chocolat",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Lasse Hallström",
     "assign": "Alfred Molina, Carrie-Anne Moss, Aurelien Parent Koenig, Antonio Gil",
@@ -634,6 +713,7 @@ export default [
   {
     "id": 80,
     "patientName": "Casino Royale",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Martin Campbell",
     "assign": "Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench",
@@ -642,6 +722,7 @@ export default [
   {
     "id": 81,
     "patientName": "WALL·E",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Andrew Stanton",
     "assign": "Ben Burtt, Elissa Knight, Jeff Garlin, Fred Willard",
@@ -650,6 +731,7 @@ export default [
   {
     "id": 82,
     "patientName": "The Wolf of Wall Street",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Martin Scorsese",
     "assign": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
@@ -658,6 +740,7 @@ export default [
   {
     "id": 83,
     "patientName": "Hellboy II: The Golden Army",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Guillermo del Toro",
     "assign": "Ron Perlman, Selma Blair, Doug Jones, John Alexander",
@@ -666,6 +749,7 @@ export default [
   {
     "id": 84,
     "patientName": "Sunset Boulevard",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Billy Wilder",
     "assign": "William Holden, Gloria Swanson, Erich von Stroheim, Nancy Olson",
@@ -674,6 +758,7 @@ export default [
   {
     "id": 85,
     "patientName": "I-See-You.Com",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Eric Steven Stahl",
     "assign": "Beau Bridges, Rosanna Arquette, Mathew Botuchis, Shiri Appleby",
@@ -682,6 +767,7 @@ export default [
   {
     "id": 86,
     "patientName": "The Grand Budapest Hotel",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Wes Anderson",
     "assign": "Ralph Fiennes, F. Murray Abraham, Mathieu Amalric, Adrien Brody",
@@ -690,6 +776,7 @@ export default [
   {
     "id": 87,
     "patientName": "The Hitchhiker's Guide to the Galaxy",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Garth Jennings",
     "assign": "Bill Bailey, Anna Chancellor, Warwick Davis, Yasiin Bey",
@@ -698,6 +785,7 @@ export default [
   {
     "id": 88,
     "patientName": "Once Upon a Time in America",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Sergio Leone",
     "assign": "Robert De Niro, James Woods, Elizabeth McGovern, Joe Pesci",
@@ -706,6 +794,7 @@ export default [
   {
     "id": 89,
     "patientName": "Oblivion",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Joseph Kosinski",
     "assign": "Tom Cruise, Morgan Freeman, Olga Kurylenko, Andrea Riseborough",
@@ -714,6 +803,7 @@ export default [
   {
     "id": 90,
     "patientName": "V for Vendetta",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "James McTeigue",
     "assign": "Natalie Portman, Hugo Weaving, Stephen Rea, Stephen Fry",
@@ -722,6 +812,7 @@ export default [
   {
     "id": 91,
     "patientName": "Gattaca",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Andrew Niccol",
     "assign": "Ethan Hawke, Uma Thurman, Gore Vidal, Xander Berkeley",
@@ -730,6 +821,7 @@ export default [
   {
     "id": 92,
     "patientName": "Silver Linings Playbook",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "David O. Russell",
     "assign": "Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver",
@@ -738,6 +830,7 @@ export default [
   {
     "id": 93,
     "patientName": "Alice in Wonderland",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Tim Burton",
     "assign": "Johnny Depp, Mia Wasikowska, Helena Bonham Carter, Anne Hathaway",
@@ -746,6 +839,7 @@ export default [
   {
     "id": 94,
     "patientName": "Gandhi",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Richard Attenborough",
     "assign": "Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud",
@@ -754,6 +848,7 @@ export default [
   {
     "id": 95,
     "patientName": "Pacific Rim",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Guillermo del Toro",
     "assign": "Charlie Hunnam, Diego Klattenhoff, Idris Elba, Rinko Kikuchi",
@@ -762,6 +857,7 @@ export default [
   {
     "id": 96,
     "patientName": "Kiss Kiss Bang Bang",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Shane Black",
     "assign": "Robert Downey Jr., Val Kilmer, Michelle Monaghan, Corbin Bernsen",
@@ -770,6 +866,7 @@ export default [
   {
     "id": 97,
     "patientName": "The Quiet American",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Phillip Noyce",
     "assign": "Michael Caine, Brendan Fraser, Do Thi Hai Yen, Rade Serbedzija",
@@ -778,6 +875,7 @@ export default [
   {
     "id": 98,
     "patientName": "Cloud Atlas",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Tom Tykwer, Lana Wachowski, Lilly Wachowski",
     "assign": "Tom Hanks, Halle Berry, Jim Broadbent, Hugo Weaving",
@@ -786,6 +884,7 @@ export default [
   {
     "id": 99,
     "patientName": "The Impossible",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "J.A. Bayona",
     "assign": "Naomi Watts, Ewan McGregor, Tom Holland, Samuel Joslin",
@@ -794,6 +893,7 @@ export default [
   {
     "id": 100,
     "patientName": "All Quiet on the Western Front",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Lewis Milestone",
     "assign": "Louis Wolheim, Lew Ayres, John Wray, Arnold Lucy",
@@ -802,6 +902,7 @@ export default [
   {
     "id": 101,
     "patientName": "The English Patient",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Anthony Minghella",
     "assign": "Ralph Fiennes, Juliette Binoche, Willem Dafoe, Kristin Scott Thomas",
@@ -810,6 +911,7 @@ export default [
   {
     "id": 102,
     "patientName": "Dallas Buyers Club",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Jean-Marc Vallée",
     "assign": "Matthew McConaughey, Jennifer Garner, Jared Leto, Denis O'Hare",
@@ -818,6 +920,7 @@ export default [
   {
     "id": 103,
     "patientName": "Frida",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Julie Taymor",
     "assign": "Salma Hayek, Mía Maestro, Alfred Molina, Antonio Banderas",
@@ -826,6 +929,7 @@ export default [
   {
     "id": 104,
     "patientName": "Before Sunrise",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Richard Linklater",
     "assign": "Ethan Hawke, Julie Delpy, Andrea Eckert, Hanno Pöschl",
@@ -834,6 +938,7 @@ export default [
   {
     "id": 105,
     "patientName": "The Rum Diary",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Bruce Robinson",
     "assign": "Johnny Depp, Aaron Eckhart, Michael Rispoli, Amber Heard",
@@ -842,6 +947,7 @@ export default [
   {
     "id": 106,
     "patientName": "The Last Samurai",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Edward Zwick",
     "assign": "Ken Watanabe, Tom Cruise, William Atherton, Chad Lindberg",
@@ -850,6 +956,7 @@ export default [
   {
     "id": 107,
     "patientName": "Chinatown",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Roman Polanski",
     "assign": "Jack Nicholson, Faye Dunaway, John Huston, Perry Lopez",
@@ -858,6 +965,7 @@ export default [
   {
     "id": 108,
     "patientName": "Calvary",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "John Michael McDonagh",
     "assign": "Brendan Gleeson, Chris O'Dowd, Kelly Reilly, Aidan Gillen",
@@ -866,6 +974,7 @@ export default [
   {
     "id": 109,
     "patientName": "Before Sunset",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Richard Linklater",
     "assign": "Ethan Hawke, Julie Delpy, Vernon Dobtcheff, Louise Lemoine Torrès",
@@ -874,6 +983,7 @@ export default [
   {
     "id": 110,
     "patientName": "Spirited Away",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Hayao Miyazaki",
     "assign": "Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takashi Naitô",
@@ -882,6 +992,7 @@ export default [
   {
     "id": 111,
     "patientName": "Indochine",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Régis Wargnier",
     "assign": "Catherine Deneuve, Vincent Perez, Linh Dan Pham, Jean Yanne",
@@ -890,6 +1001,7 @@ export default [
   {
     "id": 112,
     "patientName": "Birdman or (The Unexpected Virtue of Ignorance)",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Alejandro G. Iñárritu",
     "assign": "Michael Keaton, Emma Stone, Kenny Chin, Jamahl Garrison-Lowe",
@@ -898,6 +1010,7 @@ export default [
   {
     "id": 113,
     "patientName": "Boyhood",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Richard Linklater",
     "assign": "Ellar Coltrane, Patricia Arquette, Elijah Smith, Lorelei Linklater",
@@ -906,6 +1019,7 @@ export default [
   {
     "id": 114,
     "patientName": "12 Angry Men",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Sidney Lumet",
     "assign": "Martin Balsam, John Fiedler, Lee J. Cobb, E.G. Marshall",
@@ -914,6 +1028,7 @@ export default [
   {
     "id": 115,
     "patientName": "The Imitation Game",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Morten Tyldum",
     "assign": "Benedict Cumberbatch, Keira Knightley, Matthew Goode, Rory Kinnear",
@@ -922,6 +1037,7 @@ export default [
   {
     "id": 116,
     "patientName": "Interstellar",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Christopher Nolan",
     "assign": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
@@ -930,6 +1046,7 @@ export default [
   {
     "id": 117,
     "patientName": "Big Nothing",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Jean-Baptiste Andrea",
     "assign": "David Schwimmer, Simon Pegg, Alice Eve, Natascha McElhone",
@@ -938,6 +1055,7 @@ export default [
   {
     "id": 118,
     "patientName": "Das Boot",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Wolfgang Petersen",
     "assign": "Jürgen Prochnow, Herbert Grönemeyer, Klaus Wennemann, Hubertus Bengsch",
@@ -946,6 +1064,7 @@ export default [
   {
     "id": 119,
     "patientName": "Shrek 2",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
     "assign": "Mike Myers, Eddie Murphy, Cameron Diaz, Julie Andrews",
@@ -954,6 +1073,7 @@ export default [
   {
     "id": 120,
     "patientName": "Sin City",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Frank Miller, Robert Rodriguez, Quentin Tarantino",
     "assign": "Jessica Alba, Devon Aoki, Alexis Bledel, Powers Boothe",
@@ -962,6 +1082,7 @@ export default [
   {
     "id": 121,
     "patientName": "Nebraska",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Alexander Payne",
     "assign": "Bruce Dern, Will Forte, June Squibb, Bob Odenkirk",
@@ -970,6 +1091,7 @@ export default [
   {
     "id": 122,
     "patientName": "Shrek",
+    "showStageButton": 1,
     "stage": "admission",
     "organisation": "Andrew Adamson, Vicky Jenson",
     "assign": "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow",
@@ -978,6 +1100,7 @@ export default [
   {
     "id": 123,
     "patientName": "Mr. & Mrs. Smith",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Doug Liman",
     "assign": "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody",
@@ -986,6 +1109,7 @@ export default [
   {
     "id": 124,
     "patientName": "Original Sin",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Michael Cristofer",
     "assign": "Antonio Banderas, Angelina Jolie, Thomas Jane, Jack Thompson",
@@ -994,6 +1118,7 @@ export default [
   {
     "id": 125,
     "patientName": "Shrek Forever After",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Mike Mitchell",
     "assign": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas",
@@ -1002,6 +1127,7 @@ export default [
   {
     "id": 126,
     "patientName": "Before Midnight",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Richard Linklater",
     "assign": "Ethan Hawke, Julie Delpy, Seamus Davey-Fitzpatrick, Jennifer Prior",
@@ -1010,6 +1136,7 @@ export default [
   {
     "id": 127,
     "patientName": "Despicable Me",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Pierre Coffin, Chris Renaud",
     "assign": "Steve Carell, Jason Segel, Russell Brand, Julie Andrews",
@@ -1018,6 +1145,7 @@ export default [
   {
     "id": 128,
     "patientName": "Troy",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Wolfgang Petersen",
     "assign": "Julian Glover, Brian Cox, Nathan Jones, Adoni Maropis",
@@ -1026,6 +1154,7 @@ export default [
   {
     "id": 129,
     "patientName": "The Hobbit: An Unexpected Journey",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Peter Jackson",
     "assign": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
@@ -1034,6 +1163,7 @@ export default [
   {
     "id": 130,
     "patientName": "The Great Gatsby",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Baz Luhrmann",
     "assign": "Lisa Adam, Frank Aldridge, Amitabh Bachchan, Steve Bisley",
@@ -1042,6 +1172,7 @@ export default [
   {
     "id": 131,
     "patientName": "Ice Age",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Chris Wedge, Carlos Saldanha",
     "assign": "Ray Romano, John Leguizamo, Denis Leary, Goran Visnjic",
@@ -1050,6 +1181,7 @@ export default [
   {
     "id": 132,
     "patientName": "The Lord of the Rings: The Fellowship of the Ring",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Peter Jackson",
     "assign": "Alan Howard, Noel Appleby, Sean Astin, Sala Baker",
@@ -1058,6 +1190,7 @@ export default [
   {
     "id": 133,
     "patientName": "The Lord of the Rings: The Two Towers",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Peter Jackson",
     "assign": "Bruce Allpress, Sean Astin, John Bach, Sala Baker",
@@ -1066,6 +1199,7 @@ export default [
   {
     "id": 134,
     "patientName": "Ex Machina",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "Alex Garland",
     "assign": "Domhnall Gleeson, Corey Johnson, Oscar Isaac, Alicia Vikander",
@@ -1074,6 +1208,7 @@ export default [
   {
     "id": 135,
     "patientName": "The Theory of Everything",
+    "showStageButton": 1,
     "stage": "case_monitoring",
     "organisation": "James Marsh",
     "assign": "Eddie Redmayne, Felicity Jones, Tom Prior, Sophie Perry",
@@ -1082,6 +1217,7 @@ export default [
   {
     "id": 136,
     "patientName": "Shogun",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "N/A",
     "assign": "Richard Chamberlain, Toshirô Mifune, Yôko Shimada, Furankî Sakai",
@@ -1090,6 +1226,7 @@ export default [
   {
     "id": 137,
     "patientName": "Spotlight",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Tom McCarthy",
     "assign": "Mark Ruffalo, Michael Keaton, Rachel McAdams, Liev Schreiber",
@@ -1098,6 +1235,7 @@ export default [
   {
     "id": 138,
     "patientName": "Vertigo",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Alfred Hitchcock",
     "assign": "James Stewart, Kim Novak, Barbara Bel Geddes, Tom Helmore",
@@ -1106,6 +1244,7 @@ export default [
   {
     "id": 139,
     "patientName": "Whiplash",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Damien Chazelle",
     "assign": "Miles Teller, J.K. Simmons, Paul Reiser, Melissa Benoist",
@@ -1114,6 +1253,7 @@ export default [
   {
     "id": 140,
     "patientName": "The Lives of Others",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Florian Henckel von Donnersmarck",
     "assign": "Martina Gedeck, Ulrich Mühe, Sebastian Koch, Ulrich Tukur",
@@ -1122,6 +1262,7 @@ export default [
   {
     "id": 141,
     "patientName": "Hotel Rwanda",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Terry George",
     "assign": "Xolani Mali, Don Cheadle, Desmond Dube, Hakeem Kae-Kazim",
@@ -1130,6 +1271,7 @@ export default [
   {
     "id": 142,
     "patientName": "The Martian",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Ridley Scott",
     "assign": "Matt Damon, Jessica Chastain, Kristen Wiig, Jeff Daniels",
@@ -1138,6 +1280,7 @@ export default [
   {
     "id": 143,
     "patientName": "To Kill a Mockingbird",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Robert Mulligan",
     "assign": "Gregory Peck, John Megna, Frank Overton, Rosemary Murphy",
@@ -1146,6 +1289,7 @@ export default [
   {
     "id": 144,
     "patientName": "The Hateful Eight",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Quentin Tarantino",
     "assign": "Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins",
@@ -1154,6 +1298,7 @@ export default [
   {
     "id": 145,
     "patientName": "A Separation",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Asghar Farhadi",
     "assign": "Peyman Moaadi, Leila Hatami, Sareh Bayat, Shahab Hosseini",
@@ -1162,6 +1307,7 @@ export default [
   {
     "id": 146,
     "patientName": "The Big Short",
+    "showStageButton": 1,
     "stage": "case_closed",
     "organisation": "Adam McKay",
     "assign": "Ryan Gosling, Rudy Eisenzopf, Casey Groves, Charlie Talbert",

@@ -39,7 +39,7 @@ const SearchColumn = ({ column, onChange }) => {
     <FormControl
       size="sm"
       style={styles.searchInput}
-      placeHolder={column.name}
+      placeholder={column.patientName}
       onChange={onChange}
     />
   </Col>

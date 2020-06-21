@@ -15,7 +15,8 @@ const AdmissionForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const setPeriodicCovidReport = withEvent(periodicCovidReport => editTicket({ ...ticket, periodicCovidReport }));
 
   const submit = () => {
-    editTicket({ ...ticket, stage: 'case_monitoring' })
+    let flag = Math.floor(Math.random() * 2) + 1; // 1 or 2
+    editTicket({ ...ticket, showStageButton: flag })
     closeModal()
   }
 

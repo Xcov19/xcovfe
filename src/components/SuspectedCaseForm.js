@@ -1,15 +1,15 @@
 import React from 'react';
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { Field, FormRow, MultipleFields, Select } from "./form";
 import { stageNames } from "../data/stages";
 
-const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
+const SuspectedCaseForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const ticket = tickets.find(({ id }) => ticketId == id);
   const withEvent = method => event => method(event.target.value);
   const setCaseId = withEvent(caseId => editTicket({ ...ticket, caseId }));
   const setStage = withEvent(stage => editTicket({ ...ticket, stage }));
   const setCreatedBy = withEvent(createdBy => editTicket({ ...ticket, createdBy }));
-  const setPatientName = withEvent(name => editTicket({ ...ticket, name }));
+  const setPatientName = withEvent(patientName => editTicket({ ...ticket, patientName }));
   const setPatientAge = withEvent(patientAge => editTicket({ ...ticket, patientAge }));
   const setPatientResidentialStatus = withEvent(patientResidentialStatus => editTicket({ ...ticket, patientResidentialStatus }));
   const setPatientAddress = withEvent(patientAddress => editTicket({ ...ticket, patientAddress }));
@@ -21,12 +21,23 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
   const setHistoryOfContact = withEvent(historyOfContact => editTicket({ ...ticket, historyOfContact }));
   const setTravelHistory = withEvent(travelHistory => editTicket({ ...ticket, travelHistory }));
 
+  const submit = () => {
+    editTicket({ ...ticket, stage: 'open_case_suspect' })
+    let flag = Math.floor(Math.random() * 2) + 1; // 1 or 2
+    editTicket({ ...ticket, showStageButton: flag })
+    
+    if(closeModal) {      
+      closeModal()
+    }
+
+  }
+
   return (
     <Form>
       <h3>Agent Roster assignments</h3>
       <FormRow>
         <Field label="Case ID" value={ticket.caseId} onChange={setCaseId} />
-        <Select label="Case Stage" options={stageNames} value={ticket.stage} onChange={setStage} />
+        {/* <Select label="Case Stage" options={stageNames} value={ticket.stage} onChange={setStage} /> */}
       </FormRow>
       <FormRow>
         <Field label="Created By" value={ticket.createdBy} onChange={setCreatedBy} />
@@ -34,8 +45,8 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
 
       <h3>Patient Details</h3>
       <FormRow>
-        <Field label="Name" value={ticket.name} onChange={setPatientName} />
-        <Field label="age" type="number" value={ticket.patientAge} onChange={setPatientAge} />
+        <Field label="Name" value={ticket.patientName} onChange={setPatientName} />
+        <Field label="Age" type="number" value={ticket.patientAge} onChange={setPatientAge} />
       </FormRow>
       <FormRow>
         <Field label="Residential Status" value={ticket.patientResidentialStatus} onChange={setPatientResidentialStatus} />
@@ -50,11 +61,14 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
         <Field label="Date of Birth" type="date" value={ticket.patientDOB} onChange={setPatientDOB} />
       </FormRow>
       <FormRow>
-        <MultipleFields label="Co-existing diseases" value={ticket.coexistingDiseases} onChange={setCoexistingDiseases} />
-        <MultipleFields label="History of contact" value={ticket.historyOfContact} onChange={setHistoryOfContact} />
+        <Field label="Co-existing diseases" value={ticket.coexistingDiseases} onChange={setCoexistingDiseases} />
+        <Field label="History of contact" value={ticket.historyOfContact} onChange={setHistoryOfContact} />
       </FormRow>
       <FormRow>
-        <MultipleFields label="Travel history" value={ticket.travelHistory} onChange={setTravelHistory} />
+        <Field label="Travel history" value={ticket.travelHistory} onChange={setTravelHistory} />
+      </FormRow>
+      <FormRow>
+        <Button onClick={submit}>Submit</Button>
       </FormRow>
     </Form>
   )

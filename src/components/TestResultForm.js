@@ -13,7 +13,8 @@ const TestResultForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const setSeverityAssessmentReport = withEvent(severityAssessmentReport => editTicket({ ...ticket, severityAssessmentReport }));
 
   const submit = () => {
-    editTicket({ ...ticket, stage: 'test_result' })
+    let flag = Math.floor(Math.random() * 2) + 1; // 1 or 2
+    editTicket({ ...ticket, showStageButton: flag })
     closeModal()
   }
   

@@ -19,7 +19,6 @@ const AdmissionForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const setAutopsyDetailsRecord = withEvent(autopsyDetailsRecord => editTicket({ ...ticket, autopsyDetailsRecord }));
 
   const submit = () => {
-    editTicket({ ...ticket, stage: 'case_closed' })
     closeModal()
   }
 
