@@ -15,7 +15,7 @@ import { isAuthenticated } from '../auth';
 
 const PrivateRoute = ({ dispatch, component, ...rest }) => {
   if (!isAuthenticated()) {
-    // return (<Redirect to="/login" />)
+    return <Redirect to="/login" />
   }
   return (
     <Route {...rest} render={props => (React.createElement(component, props))} />
