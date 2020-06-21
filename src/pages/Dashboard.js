@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Row } from "react-bootstrap";
 import { Select } from "../components/form";
+import { createProject } from "../events";
 
 function Dashboard({ projects }) {
   return (
     <React.Fragment>
       <div className="d-sm-flex align-items-center justify-content-between">
         <h1 className="h3 mb-0 text-gray-800">Projects</h1>
-        <Button className="px-4 my-4">New Project</Button>
+        <Button className="px-4 my-4" onClick={createProject.call}>New Project</Button>
       </div>
 
       <Row>
