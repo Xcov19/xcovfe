@@ -1,8 +1,6 @@
 import React from 'react';
-import {
-  Link
-} from "react-router-dom";
-import { auth0, setUser, setIsAuthenticated, isAuthenticated } from '../auth';
+import { Link } from "react-router-dom";
+import { isAuthenticated } from '../auth';
 
 class ForgotPassword extends React.Component {
   constructor(props) {

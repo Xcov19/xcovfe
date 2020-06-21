@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
-import { setIsAuthenticated, isAuthenticated } from '../auth';
+import {
+  setIsAuthenticated,
+  isAuthenticated,
+  setUsername as storeUsername,
+} from '../auth';
 import { Field, FileField, FormRow } from "./form";
 import ReactCodeInput from 'react-code-input';
 import {
@@ -55,6 +59,7 @@ const styles = {
 };
 
 const Register = props => {
+  const [username, setUsername] = React.useState('');
   const [otp, setOtp] = React.useState('');
   useEffect(() => {
     if (isAuthenticated()) {
@@ -63,6 +68,9 @@ const Register = props => {
   }, []);
 
   const login = () => {
+    if (username) {
+      storeUsername(username);
+    }
     setIsAuthenticated(true);
     props.history.push('/app/dashboard');
   };
@@ -86,7 +94,11 @@ const Register = props => {
             </FormRow>
 
             <FormRow>
-              <Field label="First Name"/>
+              <Field
+                label="First Name"
+                onChange={e => setUsername(e.target.value)}
+                value={username}
+              />
               <Field label="Last Address"/>
             </FormRow>
 
