@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { withRouter } from "react-router";
-import Ticket from '../components/Tickets';
-import SuspectedCaseForm from "../components/SuspectedCaseForm";
+
 import TicketFormModal from "../components/TicketFormModal";
-import SuspectedCaseFormContainer
-  from "../containers/SuspectedCaseFormContainer";
-import TicketsContainer from "../containers/TicketsContainer";
+import SuspectedCaseFormContainer from "../containers/SuspectedCaseFormContainer";
+import Tickets from "../components/Tickets";
+
 const contentHeight = 'calc(100vh - 100px)';
 const styles = {
   toggleWrapper: {
@@ -52,7 +51,22 @@ const styles = {
     width: 30,
     cursor: 'pointer',
   },
-  previous: { marginRight: 24 },
+  previous: {
+    marginRight: 24
+  },
+  addNewTicket: {
+    width: 140,
+    height: 40,
+    marginRight: 110,
+    fontSize: 14,
+    position: "absolute",
+    right: 0
+  },
+  casesHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: 12,
+  },
 };
 
 const Notification = () =>
@@ -95,7 +109,7 @@ const Notifications = () => {
 };
 
 const CasesOverview = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
   return (
     <div>
       <Button onClick={() => setExpanded(true)} className="mt-4">Show cases</Button>
@@ -104,8 +118,14 @@ const CasesOverview = () => {
         style={expanded ? styles.casesOverview : styles.hideCasesOverview}
         className="transition"
       >
-        <Button onClick={() => setExpanded(false)}>Close cases</Button>
-        <TicketsContainer title="Pandemic - CovidX"/>
+        <div style={styles.casesHeader}>
+          <h3>Project Title</h3>
+          <span>
+            <Button onClick={() => {}} className="mr-2">Add Patient</Button>
+            <Button onClick={() => setExpanded(false)}>Close cases</Button>
+          </span>
+        </div>
+        <Tickets />
       </div>
     </div>
   )
@@ -129,22 +149,29 @@ const ProjectCard = () =>
   </Col>;
 
 const Project = ({ history }) => {
+  const [opened, setOpened] = useState(false);
+
   const goToPreviousPage = e => {
     e.preventDefault();
     history.goBack();
   };
+  const addNewTicket = () => {
+    setOpened(!opened)
+  };
+
   return <Row style={styles.contentWrapper}>
     <Col>
       <span>
         <h3 className="mb-4 text-gray-800">
           <a href="#" style={styles.previous} onClick={goToPreviousPage}>{"<"}</a>
           <span>Project</span>
+          <button style={styles.addNewTicket} onClick={addNewTicket}>Open new suspect</button>
         </h3>
       </span>
 
-      {/*<TicketFormModal>*/}
-      {/*  <SuspectedCaseFormContainer ticketId={1} />*/}
-      {/*</TicketFormModal>*/}
+      <TicketFormModal opened={opened}>
+        <SuspectedCaseFormContainer ticketId={1} />
+      </TicketFormModal>
 
       <Row>
         <ProjectCard />
