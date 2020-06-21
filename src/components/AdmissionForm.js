@@ -12,7 +12,8 @@ const AdmissionForm = ({ tickets, ticketId, editTicket, closeModal }) => {
   const setIntensiveCareUnitBeds = withEvent(intensiveCareUnitBeds => editTicket({ ...ticket, intensiveCareUnitBeds }));
 
   const submit = () => {
-    editTicket({ ...ticket, stage: 'admission' })
+    let flag = Math.floor(Math.random() * 2) + 1; // 1 or 2
+    editTicket({ ...ticket, showStageButton: flag })
     closeModal()
   }
 

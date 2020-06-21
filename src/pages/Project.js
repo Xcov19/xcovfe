@@ -43,7 +43,7 @@ const styles = {
     left: 0,
     right: 0,
     zIndex: 10,
-    top: "100vh",
+    top: "150vh",
   },
   bell: {
     marginTop: 6,
@@ -67,6 +67,11 @@ const styles = {
     justifyContent: 'space-between',
     padding: 16,
   },
+  iframe : {
+    width: "100%",
+    height: "100vh",
+    border: "none"
+  }
 };
 
 const Notification = () =>
@@ -108,7 +113,7 @@ const Notifications = () => {
   )
 };
 
-const CasesOverview = () => {
+const CasesOverview = ({addNewTicket}) => {
   const [expanded, setExpanded] = useState(true);
   return (
     <div>
@@ -121,7 +126,7 @@ const CasesOverview = () => {
         <div style={styles.casesHeader}>
           <h3>Project Title</h3>
           <span>
-            <Button onClick={() => {}} className="mr-2">Add Patient</Button>
+            <Button onClick={() => addNewTicket()} className="mr-2">Add Patient</Button>
             <Button onClick={() => setExpanded(false)}>Hide cases</Button>
           </span>
         </div>
@@ -165,7 +170,6 @@ const Project = ({ history }) => {
         <h3 className="mb-4 text-gray-800">
           <a href="#" style={styles.previous} onClick={goToPreviousPage}>{"<"}</a>
           <span>Project</span>
-          <button style={styles.addNewTicket} onClick={addNewTicket}>Open new suspect</button>
         </h3>
       </span>
 
@@ -174,15 +178,12 @@ const Project = ({ history }) => {
       </TicketFormModal>
 
       <Row>
-        <ProjectCard />
-        <ProjectCard />
-      </Row>
-      <Row className="my-4">
-        <ProjectCard />
-        <ProjectCard />
+        <Col>
+          <iframe style={styles.iframe} src="/covid-charts/examples/dashboard/index.html"></iframe>
+        </Col>
       </Row>
 
-      <CasesOverview />
+      <CasesOverview addNewTicket={addNewTicket} />
     </Col>
 
     <Notifications />

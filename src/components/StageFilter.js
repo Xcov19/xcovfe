@@ -58,11 +58,12 @@ const StageFilter = ({ onChange, value }) => {
     }
   };
   return <Row style={styles.stageFilter}>
-    { stages.map(stage =>
+    { stages.map((stage, index) =>
       <Stage
         stage={stage}
         value={value.includes(stage.key)}
         onToggle={() => toggleStage(stage)}
+        key={index}
       />
     )}
   </Row>;
