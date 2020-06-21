@@ -123,8 +123,9 @@ const TicketsTable = ({ history, tickets, stages }) => {
     .toLowerCase()
     .split(' ').join('')
     .split('_').join('');
-
-  const stageFilter = ticket => stages.map(searchStr).includes(searchStr(ticket.stage));
+  const stageFilter = ticket => stages.length > 0
+    ? stages.map(searchStr).includes(searchStr(ticket.stage))
+    : () => true;
   const searchFilter = ticket => Object.keys(searchState).filter(
     key => !ticket[key] || !searchStr(ticket[key]).includes(searchStr(searchState[key]))
   ).length === 0;

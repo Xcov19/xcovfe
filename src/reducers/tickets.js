@@ -2,7 +2,7 @@ import { ADD_TICKET, EDIT_TICKET } from "../actions/tickets";
 import TICKETS from '../data/tickets';
 const toObj = v => v && JSON.parse(v);
 const toStr = v => v && JSON.stringify(v);
-const TICKETS_KEY = 'tickets__01';
+const TICKETS_KEY = 'tickets__0005';
 const getTickets = () => toObj(localStorage.getItem(TICKETS_KEY)) || TICKETS;
 const setTickets = state => localStorage.setItem(TICKETS_KEY, toStr(state)) || state;
 
