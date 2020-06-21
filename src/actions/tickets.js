@@ -11,7 +11,7 @@ export const addTicket = ticket => ({
   },
 });
 
-export const editTicket = ticket => console.log('EDIT', ticket, new Date().toLocaleString()) || ({
+export const editTicket = ticket => ({
   type: EDIT_TICKET,
   ticket: {
     ...ticket,
