@@ -9,7 +9,9 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
   const setCaseId = withEvent(caseId => editTicket({ ...ticket, caseId }));
   const setStage = withEvent(stage => editTicket({ ...ticket, stage }));
   const setCreatedBy = withEvent(createdBy => editTicket({ ...ticket, createdBy }));
-  const setPatientName = withEvent(patientName => editTicket({ ...ticket, patientName }));
+  const setClosedBy = withEvent(closedBy => editTicket({ ...ticket, closedBy }));
+
+  const setPatientName = withEvent(name => editTicket({ ...ticket, name }));
   const setPatientAge = withEvent(patientAge => editTicket({ ...ticket, patientAge }));
   const setPatientResidentialStatus = withEvent(patientResidentialStatus => editTicket({ ...ticket, patientResidentialStatus }));
   const setPatientAddress = withEvent(patientAddress => editTicket({ ...ticket, patientAddress }));
@@ -30,11 +32,12 @@ const SuspectedCaseForm = ({ tickets, ticketId, editTicket }) => {
       </FormRow>
       <FormRow>
         <Field label="Created By" value={ticket.createdBy} onChange={setCreatedBy} />
+        {/* <Field label="Closed By" value={ticket.closedBy} onChange={setClosedBy}/> */}
       </FormRow>
 
       <h3>Patient Details</h3>
       <FormRow>
-        <Field label="Name" value={ticket.patientName} onChange={setPatientName} />
+        <Field label="Name" value={ticket.name} onChange={setPatientName} />
         <Field label="age" type="number" value={ticket.patientAge} onChange={setPatientAge} />
       </FormRow>
       <FormRow>
