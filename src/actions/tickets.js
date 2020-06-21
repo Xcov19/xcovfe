@@ -7,10 +7,14 @@ export const addTicket = ticket => ({
     ...ticket,
     name: `${ticket.hospital || 'hospital'} - ${ticket.template || 'covid-19'}`,
     id: ++_id,
+    createdOn: new Date().toLocaleDateString(),
   },
 });
 
-export const editTicket = ticket => ({
+export const editTicket = ticket => console.log('EDIT', ticket, new Date().toLocaleString()) || ({
   type: EDIT_TICKET,
-  ticket,
+  ticket: {
+    ...ticket,
+    lastUpdated: new Date().toLocaleDateString(),
+  },
 });
