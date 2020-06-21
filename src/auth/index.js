@@ -1,6 +1,7 @@
 let isUserAuthenticated = false;
-let userData = {};
-let auth0FromHook = {};
+const USERNAME_KEY = 'username__001';
+export const getUsername = () => localStorage.getItem(USERNAME_KEY);
+export const setUsername = str => localStorage.setItem(USERNAME_KEY, str);
 
 export const isAuthenticated = () => {
   return isUserAuthenticated;
@@ -8,16 +9,4 @@ export const isAuthenticated = () => {
 
 export const setIsAuthenticated = (value) => {
   isUserAuthenticated = value;
-};
-
-export const user = () => {
-  return userData;
-};
-
-export const setUser = (data) => {
-  userData = data;
-};
-
-export const auth0 = () => {
-  return auth0FromHook;
 };

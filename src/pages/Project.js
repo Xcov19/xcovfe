@@ -127,7 +127,7 @@ const CasesOverview = ({addNewTicket}) => {
           <h3>Project Title</h3>
           <span>
             <Button onClick={() => addNewTicket()} className="mr-2">Add Patient</Button>
-            <Button onClick={() => setExpanded(false)}>Close cases</Button>
+            <Button onClick={() => setExpanded(false)}>Hide cases</Button>
           </span>
         </div>
         <Tickets />
