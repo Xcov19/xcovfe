@@ -1,3 +1,7 @@
+* {
+    font-family: Barlow;
+}
+
 @media (min-width:800px) {
     #carousel-section {
         height: 70vh;

@@ -12,6 +12,7 @@ footer .footer-text {
   font-weight: normal;
   font-size: 16px;
   color: rgba(255,255,255,1);
+  margin-top: 18px;
 }
 
 footer .footer-button {
@@ -28,6 +29,12 @@ footer .footer-button {
   color: rgba(255,255,255,1);
   margin-top: 20px;
   display: inline-block;
+  cursor: pointer;
+}
+
+footer .footer-button:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,1);
 }
 
 footer .footer-section h6 {
