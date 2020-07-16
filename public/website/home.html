@@ -11,15 +11,188 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <link rel="stylesheet" href="static/css/home.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- carousel CSS dependencies -->
+  <link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>
 </head>
 <body>
 
-<div class="xs-12 md-6"></div>
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="static/logo.png"/>
+    </a>
+    <a href="aboutus.html" class="btn">About us</a>
+  </div>
+</nav>
 
-<!-- Optional Bootstrap Javascript Libraries -->
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
+<!-- Carousel section -->
+<div id="carousel-section">
+  <div class="container my-auto">
+    <div class="row my-auto">
+      <div class="col-md-4 col-sm-12">
+        <h1 class="mb-5 heading center-mobile">
+          Smart Patient Management
+        </h1>
+        <h5 style="color: gray" class="mb-5 center-mobile">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </h5>
+        <button class="btn btn-outline-primary center-mobile">
+          Lead Generation Button
+        </button>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div id="carousel">
+          <img src="static/carousel_item_1.png"/>
+          <img src="static/carousel_item_2.png"/>
+          <img src="static/carousel_item_3.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video section -->
+<div id="video-section">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-md-6 col-lg-7 col-sm-12">
+        <video controls style="width: 100%" src="./static/landpage_vid.mp4" type="video/mp4"/>
+      </div>
+
+      <div class="col-md-6 col-lg-5 col-sm-12">
+        <h1 class="heading white center-mobile">
+          A timely response to COVID-19
+        </h1>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+        <button class="btn btn-outline-primary center-mobile">
+          <b style="color: white; font-weight: bold">Take a quick survey</b>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- USP section -->
+<div class="container py-5 mb-4">
+  <h1 class="text-center heading">Heading Goes Here</h1>
+  <h3 class="text-center mb-4">Subheading goes here</h3>
+
+  <div id="gradient-bg-wrapper">
+    <div id="gradient-bg">
+      <div class="row shadow" id="gradient-overlay">
+        <div class="col-md-4 col-sm-12 usp-item">
+          Icon yet to be supplied
+          <h5>
+            No Training Time
+          </h5>
+          <h6>
+            Subheader
+          </h6>
+        </div>
+
+        <div class="col-md-4 col-sm-12 usp-item">
+          Icon yet to be supplied
+          <h5>
+            No Training Time
+          </h5>
+          <h6>
+            Subheader
+          </h6>
+        </div>
+
+        <div class="col-md-4 col-sm-12 usp-item">
+          Icon yet to be supplied
+          <h5>
+            No Training Time
+          </h5>
+          <h6>
+            Subheader
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- USP section 2 -->
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 usp-item">
+      Icon yet to be supplied
+      <h5 class="heading">
+        Unified Flow
+      </h5>
+      <h6>
+        Subheader
+      </h6>
+    </div>
+
+    <div class="col-md-3 col-sm-6 usp-item">
+      Icon yet to be supplied
+      <h5>
+        Affordable
+      </h5>
+      <h6>
+        Subheader
+      </h6>
+    </div>
+
+    <div class="col-md-3 col-sm-6 usp-item">
+      Icon yet to be supplied
+      <h5>
+        Works Online & Offline
+      </h5>
+      <h6>
+        Subheader
+      </h6>
+    </div>
+
+    <div class="col-md-3 col-sm-6 usp-item">
+      Icon yet to be supplied
+      <h5>
+        Data Privacy Aware
+      </h5>
+      <h6>
+        Subheader
+      </h6>
+    </div>
+  </div>
+</div>
+
+
+<!-- carousel JS dependencies -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="static/slick/slick.min.js"></script>
 </body>
+
+<script>
+  $(function () {
+    "use strict";
+    //===== testimonial active
+    $('#carousel').slick({
+      speed: 500,
+      dots: true,
+      arrows: true,
+      centerMode: true,
+      centerPadding: "0",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  });
+</script>
+
 </html>
