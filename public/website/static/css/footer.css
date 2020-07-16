@@ -1,0 +1,71 @@
+footer {
+  background-color: rgba(46,69,93,1);
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+footer .footer-text {
+  line-height: 24px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+}
+
+footer .footer-button {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid rgba(0,205,255,1);
+  border-radius: 10px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255,255,255,1);
+  margin-top: 20px;
+  display: inline-block;
+}
+
+footer .footer-section h6 {
+  white-space: nowrap;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255,255,255,1);
+  margin-bottom: 25px;
+}
+
+footer .footer-section span {
+  white-space: nowrap;
+  line-height: 30px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+
+footer .copyright {
+  white-space: nowrap;
+  line-height: 24px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .copyright svg{
+  width: 21px;
+  height: 18px;
+  transform: matrix(1,0,0,1,0,0);
+}

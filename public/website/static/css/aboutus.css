@@ -1,0 +1,106 @@
+.aboutus-banner {
+  background-color: rgba(46,69,93,1);
+  line-height: 20px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.aboutus-banner h2 {
+  overflow: visible;
+  white-space: nowrap;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+}
+
+.aboutus-team {
+  padding-bottom: 100px;
+}
+
+.aboutus-team .heading {
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(46,69,93,1);
+  margin-top: 30px;
+}
+
+.aboutus-team .subheading {
+  white-space: nowrap;
+  line-height: 24px;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(45,68,94,1);
+}
+
+.aboutus-team .card {
+  box-shadow: 0px 6px 16px rgba(45, 68, 94, 0.122);
+  border-radius: 16px;
+  border: none;
+  margin-top: 120px;
+}
+
+.aboutus-team .card .card-img-top {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: 30px;
+  top: -70px;
+}
+
+.aboutus-team .card .card-body {
+  padding-top: 90px;
+}
+
+.aboutus-team .card .card-body .card-title {
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(45,68,94,1);
+  margin-bottom: 0;
+}
+
+.aboutus-team .card .card-body .card-subtitle {
+  opacity: 0.4;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(45,68,94,1);
+}
+
+.aboutus-team .card .card-body .card-text {
+  overflow: visible;
+  line-height: 24px;
+  margin-top: 15px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(45,68,94,1);
+}
