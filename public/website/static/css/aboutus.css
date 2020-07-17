@@ -65,6 +65,7 @@
   height: 140px;
   left: 30px;
   top: -70px;
+  object-fit: cover;
 }
 
 .aboutus-team .card .card-body {

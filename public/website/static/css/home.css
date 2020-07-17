@@ -58,8 +58,8 @@
     color: white;
 }
 
-li {
-    font-size: 24px;
+.video-text {
+    font-size: 18px;
     color: gray;
 }
 
@@ -77,4 +77,16 @@ li {
 .usp-item h6 {
     font-weight: bold;
     color: gray
+}
+.usp-icon {
+    margin: 0 auto 12px auto;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+.usp-icon-large {
+    margin: 0 auto 12px auto;
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
 }
