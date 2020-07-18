@@ -1,2 +1,0 @@
-# xcovfe
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6420b46594384450b77ab666e28dc9f3)](https://app.codacy.com/gh/Xcov19/xcovfe?utm_source=github.com&utm_medium=referral&utm_content=Xcov19/xcovfe&utm_campaign=Badge_Grade_Settings)
