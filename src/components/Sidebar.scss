@@ -1,0 +1,14 @@
+.transition {
+  //transition: width 2s ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.expanded-sidebar {
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.collapsed-sidebar {
+  max-width: 0;
+  overflow: hidden;
+}
