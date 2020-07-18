@@ -1,0 +1,13 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "xcov landing page",
+  "repository": "https://www.github.com:Xcov19/xcovfe.git",
+  "author": "codecakes",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "snowpack": "^2.6.4"
+  }
+}
