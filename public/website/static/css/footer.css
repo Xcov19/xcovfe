@@ -37,6 +37,11 @@ footer .footer-button:hover {
   color: rgba(255,255,255,1);
 }
 
+footer .footer-section a {
+  color: white;
+  text-decoration: underline;
+}
+
 footer .footer-section h6 {
   white-space: nowrap;
   text-align: left;

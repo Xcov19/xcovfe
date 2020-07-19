@@ -90,3 +90,6 @@
     width: 80px;
     object-fit: contain;
 }
+.slick-prev:before, .slick-next:before{
+    color:gray;
+}
