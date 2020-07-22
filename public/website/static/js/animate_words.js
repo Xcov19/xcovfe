@@ -17,10 +17,7 @@ const msgMap = {
 
 const replaceInnerHtml = (wrapperObj) => {
     let innertText = wrapperObj.text();
-    wrapperObj.html(
-        innertText.replace(/([^\x00-\x80]|\w)/gi, "<span class='letter'>$&</span>"))
-    // wrapperObj.innerHTML = wrapperObj.textContent.replace(
-	// 		/([^\x00-\x80]|\w)/gi, "<span class='letter'>$&</span>");
+    wrapperObj.html(innertText.replace(/([^\x00-\x80]|\w)/gi, "<span class='letter'>$&</span>"));
 };
 
 const replaceWordsInterval = (wordsMap) => {
