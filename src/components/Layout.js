@@ -4,6 +4,8 @@ import {
   Route
 } from "react-router-dom";
 
+// import '../stylesheets/main.scss';
+
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Project from '../pages/Project';
