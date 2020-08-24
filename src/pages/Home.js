@@ -208,6 +208,7 @@ const Home = () => {
             <span>Made with
             <svg className="Icon_awesome-heart_vq" viewBox="-0.001 2.248 21.144 18.501">
                 <linearGradient id="Icon_awesome-heart_vq" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+
                   <stop offset="0" stop-color="#0cf" stop-opacity="1"></stop>
                   <stop offset="1" stop-color="#00d1b4" stop-opacity="1"></stop>
                 </linearGradient>
