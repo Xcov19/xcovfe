@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 
 import '../stylesheets/home.scss';
@@ -26,7 +28,7 @@ const Home = () => {
                 <h1>Extensible Healthcare Infrastructure</h1>
               </div>
               <h1 className="mb-5 heading center-mobile">
-                <h5 style={{color: "gray"}} className="mb-5 center-mobile ml11">
+                <h5 style={{ color: "gray" }} className="mb-5 center-mobile ml11">
                   <span className="small-text text-wrapper">
                     <span className="line line1"></span>
                     Fix <span className="letters" id="fix-one">Healthcare</span>
@@ -52,7 +54,7 @@ const Home = () => {
         <div className="container my-auto">
           <div className="row">
             <div className="col-md-6 col-lg-7 col-sm-12">
-              <video controls poster="website/static/images/carousel_1.png" style={{width: "100%"}} preload="none">
+              <video controls poster="website/static/images/carousel_1.png" style={{ width: "100%" }} preload="none">
                 <source src="https://xcov-videos.s3-ap-southeast-1.amazonaws.com/landpage_vid.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -64,7 +66,7 @@ const Home = () => {
               </h1>
 
               <p className="video-text">
-                <article style={{color:"white"}}>
+                <article style={{ color: "white" }}>
                   During times of crises, a performant tool is needed.
                   EMRs (Electronic Medical Records) today are notoriously hard to use and
                   lack effective communication between the different stakeholders of a hospital.
@@ -73,7 +75,7 @@ const Home = () => {
               </article>
               </p>
               <button className="btn btn-outline-primary center-mobile">
-                <a style={{color: "white", fontWeight: "bold"}} href="https://bit.ly/38rinqw  ">Get a free demo now</a>
+                <a style={{ color: "white", fontWeight: "bold" }} href="https://bit.ly/38rinqw  ">Get a free demo now</a>
               </button>
             </div>
           </div>
@@ -84,7 +86,7 @@ const Home = () => {
         <h1 className="text-center heading">The Problem</h1>
         <h3 className="text-center">There is no simple, efficient, & reliable way to manage patients during COVID-19</h3>
 
-        <div className="row" style={{justifyContent: "center"}}>
+        <div className="row" style={{ justifyContent: "center" }}>
           <div className="col-md-4 col-lg-3 col-sm-12 usp-item">
             <img src="website/static/icons/icon1.svg" className="usp-icon-large" />
             <h5>

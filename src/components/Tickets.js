@@ -10,16 +10,12 @@ const storeStages = state => localStorage.setItem(STAGE_FILTER_KEY, toStr(state)
 
 
 const Tickets = () => {
-    const [stages, setStages] = React.useState(getStages());
-    storeStages(stages);
-    return <div >
-        <
-        StageFilter value = { stages }
-    onChange = { setStages }
-    /> <
-    TicketsTableContainer stages = { stages }
-    /> <
-    /div>
+  const [stages, setStages] = React.useState(getStages());
+  storeStages(stages);
+  return <div>
+    <StageFilter value={stages} onChange={setStages} />
+    <TicketsTableContainer stages={stages} />
+  </div>
 };
 
 export default Tickets;
