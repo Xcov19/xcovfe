@@ -4,6 +4,9 @@ import {
   Route
 } from "react-router-dom";
 
+import '../stylesheets/main.scss';
+// TODO(@ksr89): See react_layout.scss for react pages only.
+
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Project from '../pages/Project';

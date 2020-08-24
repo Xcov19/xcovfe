@@ -10,6 +10,7 @@ import Layout from './Layout';
 import Login from './Login';
 import Register from './Register';
 import ForgotPassword from './ForgotPassword';
+import Home from '../pages/Home';
 
 import { isAuthenticated } from '../auth';
 
@@ -28,7 +29,7 @@ const PrivateRoute = ({ dispatch, component, ...rest }) => {
 const App = () =>
   <Router>
     <Switch>
-      <Route path='/' component={() => { window.location = '/website/home.html'; return null;} }/>
+      <Route path='/' exact render={Home}/>
       <Route path="/xcov-demo" exact render={() => <Redirect to="/app/dashboard" />} />
       <PrivateRoute path="/app" component={Layout} />
       <Route path="/login" component={Login} />
